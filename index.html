@@ -1,0 +1,101 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+<link rel="stylesheet" href="./css/master.css">
+<link rel="stylesheet" href="./css/firstBlock.css">
+
+<body>
+   <div style="padding-top: 100px;border-top-left-radius: 18px; border-top-right-radius: 18px" class="block border">
+   <div class="inline">
+        <p class="raised">Raised:<span id="raised"></span> ETH</p>
+      </div>
+
+      <div class="inline teth">
+
+
+        <div class="inline">
+          <span>Token Sold: </span>
+        </div>
+        <div class="inline">
+          <span style="margin-bottom:10px" id="tokensold"></span>
+        </div>
+        <span></span>
+
+      </div>
+      <div class="progressB">
+        <div id="1barchik" class="progress-bar" role="progressbar" style="border-radius:14px; background-color:#00BEA3;border:1px solid white" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">75%</div>
+      </div>
+
+      <div class="softhard">
+        <span>Soft:<span id="soft"></span> ETH</span>
+        <span class="hard">Hard:<span id="hard"></span> ETH</span>
+
+      </div>
+    </div>
+
+  <div class="block">
+    <div class="img_bar">
+      <img id="back_ground" src="./img/bckgrnd_sprite.png" alt="">
+      <img style="visibility:hidden" id="arrLeft" src="./img/arrows/arrLeft.png" alt="">
+      <img style="visibility:hidden" id="arrLeftsloj2" src="./img/arrows/arrLeftsloj2.png" alt="">
+      <img style="visibility:hidden" id="arrow" src="./img/arrows/arrow.png" alt="">
+      <img style="visibility:hidden" id="arrow_Sloj2" src="./img/arrows/arrowsloj2.png" alt="">
+      <img style="visibility:hidden" id="arrow2" src="./img/arrows/arrow.png" alt="">
+      <img style="visibility:hidden" id="arrow2_Sloj2" src="./img/arrows/arrowsloj2.png" alt="">
+      <img style="visibility:hidden" id="arrRight" src="./img/arrows/arrRight.png" alt="">
+      <img style="visibility:hidden;" id="arrRightSloj2" src="./img/arrows/arrRightSloj2.png" alt="">
+
+      <div class="label">
+
+        <div style="position:relative;left:70px;top:-15px;" class="stage">
+
+
+          <div class="label" id="label1">Stage 1</div>
+          <div class="label" id="label2">Stage 2</div>
+          <div class="label" id="label3">Stage 3</div>
+
+        </div>
+        <div style="position:relative;top:-40px;" id="status">
+          <div class="label" id="label5">Expectation</div>
+          <div class="label" id="label6">Expectation</div>
+          <div class="label" id="label7">Expectation</div>
+          <div class="label" id="label8">Sale Finished</div>
+        </div>
+    
+
+    <script type="text/javascript" src="./js/index.js" async></script>
+    <script type="text/javascript" src="./js/web3.min.js"></script>
+
+    <br /><br />
+    Your account address (use a test account) from which to interact with the contract:<br />
+    <input id='fromAddress' placeholder='from address' size='50'>
+
+    <br /><br />
+    Enter an integer (uint) and press the button.<br />
+    This will execute the contract method.<br />
+    <input id='valStore' placeholder='value' ><button id="valStoreBtn" onclick="tes()">store</button>
+
+    <br /><br />
+</div>
+    </div>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
