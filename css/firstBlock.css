@@ -1,3 +1,4 @@
+
 body {
   font-family: Verdana, Arial, Helvetica, sans-serif;
   font-size: 12px;
@@ -38,6 +39,7 @@ body {
   left: -288px;
 
 }
+
 
 #arrow{
   position: relative;
@@ -131,6 +133,7 @@ top:-548px;
 left:580px;
 }
 
+
 #label8{                     /* ARROW4  EXPECTAION4*/
   position: relative;
 top:-572px;
@@ -155,3 +158,4 @@ left:820px;
 .bottom_part {
   margin-top: 20px;
 }
+
