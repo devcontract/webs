@@ -19,10 +19,12 @@ body {
   width: auto !important;
   max-width: 1010px;
   min-width: 1010px;
+    background-color: #7996A2;
 }
 
 #img_bar{
   position: absolute;
+
 }
 #arrLeft{
   position: relative;
@@ -79,54 +81,73 @@ body {
 
 }
 
-.label{
+
+.label {
+  width: 50px;
+  position: absolute;
   font-size: 20px;
 }
+
 #label1{                   /* ARROW1 RIGHT %40 BONUS */
-  position: relative;
+  position: absolute;
 top:-501px;
 left:20px;
 }
 
 #label2{                  /* ARROW2 25% BONUS */
-  position: relative;
-top:-525px;
+  position: absolute;
+top:-501px;
 left:280px;
 }
 
 #label3{                     /* ARROW3 bonus 10%*/
-  position: relative;
-top:-549px;
+  position: absolute;
+top:-501px;
 left:525px;
 }
 
 
-#label4{                     /* ARROW4 bonus 0%*/
-  position: relative;
-top:-573px;
-left:612px;
-}
+
 
 #label5{                     /* ARROW1 RIGHT EXPECTAION1*/
-  position: relative;
-top:-500px;
+  position: absolute;
+top:-420px;
 left:65px;
 }
 
 #label6{                     /* ARROW2 EXPECTAION2*/
   position: relative;
-top:-524px;
+top:-420px;
 left:340px;
 }
 
 #label7{                     /* ARROW3  EXPECTAION3*/
-  position: relative;
-top:-548px;
+  position: absolute;
+top:-420px;
 left:580px;
 }
 
 #label8{                     /* ARROW4  EXPECTAION4*/
-  position: relative;
-top:-572px;
+  position: absolute;
+top:-420px;
 left:820px;
+}
+
+
+.green_line {
+  border-bottom: 3px solid #00b399;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 20px;
+  font-size: 23px;
+  font-family: sans-serif;
+}
+
+.bottom_part span {
+  color: white;
+  font-size: 60px;
+  font-family: sans-serif;
+}
+.bottom_part {
+  margin-top: 20px;
 }

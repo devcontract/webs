@@ -7,7 +7,78 @@ body {
   background-color: white;
 }
 
-                                                       /* end of nav bar styling*/
+/* Fixed sidenav, full height */
+
+.sidenav {
+  height: 100%;
+  width: 175px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Style the sidenav links and the dropdown button */
+
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+}
+
+/* Main content */
+
+/* Add an active class to the active dropdown button */
+
+.active {
+  background-color: #58666c;
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+/* Some media queries for responsiveness */
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+/* end of nav bar styling*/
 
 .container {
   border: 1px solid none;
@@ -25,11 +96,102 @@ body {
   min-width: 1010px;
 }
 
+/*first block styles */
 
-                                /*first block styles */
+tbody {
+  color: black;
+}
 
+.digits {
+  font-size: 50px;
+  font-style: italic;
+  font-weight: bold;
+  transition: 1s;
+}
 
+.digits:hover {
+  color: grey;
+}
 
+.hourminsec {
+  font-size: 10px;
+  font-weight: lighter;
+  text-align: center;
+  color: black;
+}
+
+.progressB {
+  margin-left: 5;
+  border: 2px solid #000000;
+  border-radius: 13px;
+  margin: 0 70px 0 70px;
+}
+
+.caps {
+  margin-left: 70px;
+  width: 500px;
+}
+
+.hcprg {
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 100%;
+  height: 14px;
+  margin-bottom: 5px;
+}
+
+.prbr {
+  height: 12px;
+  border-radius: 4px;
+}
+
+.left {
+  float: left;
+  margin-left: 15px;
+}
+
+.teth {
+  float: right;
+  margin-right: 70px;
+}
+
+.inline {
+  display: inline-block;
+}
+
+.pbar {
+  width: 200px;
+}
+
+.hardc {
+  font-size: 13px;
+  margin-left: 5px;
+}
+
+#stg1com {
+  visibility: hidden;
+  color: white;
+}
+
+.hard {
+  float: right;
+}
+
+.softhard {
+  margin: 10px 70px 55px 70px;
+}
+
+p {
+  margin-left: 50px;
+}
+
+p, span {
+  color: black;
+}
+
+.raised {
+  margin-left: 70px;
+}
 
 .container_bottom {
   border: 1px solid none;
@@ -46,32 +208,25 @@ body {
 
 /*bar styles ---------------------------*/
 
-.blocks {
+.block {
   width: 100%;
   height: 175px;
   background-color: #7996A2;
-
-
 }
 
 
-
-
-.green_line {
-  border-bottom: 3px solid #00b399;
-
-  width: 90%;
+.labeles {
   margin: 0 auto;
-  margin-top: 20px;
-  font-size: 23px;
-  font-family: sans-serif;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  margin-left: 100px;
+  top: -290px;
+
+  visibility: hidden;
 }
 
-.bottom_part span {
-  color: white;
-  font-size: 60px;
-  font-family: sans-serif;
-}
+
 
 .bottom_part {
   width: 90%;
@@ -94,24 +249,18 @@ body {
 
 /*-------------------------------------------------*/
 
-.bottom_part {
-  margin-top: 20px;
 
-}
 
 .last_block {
   margin: 0 auto;
   width: 95%;
   height: 100%;
   margin-top: 40px;
-
   font-family: monospace;
   font-size: 17px;
 }
 
-.span_string {
 
-}
 
 input {
   background-color: white;
@@ -142,4 +291,17 @@ input {
 
 #buy_button:hover {
   box-shadow: 2px 2px 4px #00BEA3;
+}
+
+
+button {
+  -webkit-transition-duration: 0.6s;
+  /* Safari */
+  transition-duration: 0.6s;
+}
+
+button:hover {
+  background-color: #34f6e5;
+  /* rose */
+  color: white;
 }
