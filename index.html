@@ -19,8 +19,9 @@
 
 <body>
 
- <div style="min-height: 80px;max-height: 1px;padding-top: 10px;border-top-left-radius: 18px; border-top-right-radius: 18px" class="block border">
-  <div style="display:flex; margin:0 auto; width:1000px;margin-bottom: 10px;" class="">
+ <div style="min-height: 80px;max-height: 1px;padding-top: 10px;border-top-left-radius:18px; border-top-right-radius: 18px" class="block">
+
+    <div style="display:flex; margin:0 auto; width:1000px;margin-bottom: 10px;" class="">
 
       <div style="width:400px;margin-left: 65px;text-align:left;" >
         <span>Raised: <span id="raised"></span> ETH</span>
@@ -35,7 +36,7 @@
         <div id="1barchik" class="progress-bar" role="progressbar" style="border-radius:14px; background-color:#00BEA3;border:1px solid white" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
       </div>
 
-      <div class="softhard">
+      <div style="margin-top:10px" class="softhard">
         <span>Soft: <span id="soft"></span> ETH</span>
         <span class="hard">Hard: <span id="hard"></span> ETH</span>
 
@@ -48,14 +49,14 @@
       <div style="margin-left:9px;"class="">
 
 
-      <img style="visibility:visible" id="arrLeft" src="./img/arrows/arrLeft.png" alt="">
-      <img style="visibility:visible" id="arrLeftsloj2" src="./img/arrows/arrLeftsloj2.png" alt="">
-      <img style="visibility:visible" id="arrow" src="./img/arrows/arrow.png" alt="">
-      <img style="visibility:visible" id="arrow_Sloj2" src="./img/arrows/arrowsloj2.png" alt="">
-      <img style="visibility:visible" id="arrow2" src="./img/arrows/arrow.png" alt="">
-      <img style="visibility:visible" id="arrow2_Sloj2" src="./img/arrows/arrowsloj2.png" alt="">
-      <img style="visibility:visible" id="arrRight" src="./img/arrows/arrRight.png" alt="">
-      <img style="visibility:visible;" id="arrRightSloj2" src="./img/arrows/arrRightSloj2.png" alt="">
+      <img style="visibility:hidden" id="arrLeft" src="./img/arrows/arrLeft.png" alt="">
+      <img style="visibility:hidden" id="arrLeftsloj2" src="./img/arrows/arrLeftsloj2.png" alt="">
+      <img style="visibility:hidden" id="arrow" src="./img/arrows/arrow.png" alt="">
+      <img style="visibility:hidden" id="arrow_Sloj2" src="./img/arrows/arrowsloj2.png" alt="">
+      <img style="visibility:hidden" id="arrow2" src="./img/arrows/arrow.png" alt="">
+      <img style="visibility:hidden" id="arrow2_Sloj2" src="./img/arrows/arrowsloj2.png" alt="">
+      <img style="visibility:hidden" id="arrRight" src="./img/arrows/arrRight.png" alt="">
+      <img style="visibility:hidden;" id="arrRightSloj2" src="./img/arrows/arrRightSloj2.png" alt="">
   </div>
       <div class="label">
 
@@ -86,8 +87,8 @@ class="block">
       <div class="bottom_part">
         <span>1<span style="font-size:30px;padding-top:10px">ETH</span> = <span id="token_price"></span> <span style="font-size:30px" id="name"></span> <span style="font-size:30px;" id=token_name3> </span></span>
         <div class="sale">
-          <img style="filter:invert(100%);margin-top:-150px;margin-left:60px" src="./img/present.png" alt="present">
-        <span><span id="bonus" style="margin-left:10px;"></span><span id="token_name4"> </span> <span style="margin-left:5px" id="value_token" ></span></span>
+          <img style="filter:invert(100%);margin-top:-150px;margin-left:92px" src="./img/present.png" alt="present">
+      <span id="bonus" style="margin-left:10px;"></span><span style="margin-left:5px" id="value_token" ></span><span style="margin: 5px;" id="token_name4"></span>
 
         </div>
       </div>
@@ -97,11 +98,11 @@ class="block">
   <!-- end of the last BLock withkak tokens per eth-->
 
     <!--Last Block with calculator-->
-    <div style="min-height: 100px;max-height: 400px;border-bottom-left-radius: 18px;  border-bottom-right-radius: 18px;" class="block border">
+    <div style="min-height: 100px;max-height: 400px;border-bottom-left-radius: 18px;  border-bottom-right-radius: 18px;" class="block ">
       <div class="last_block">
         <div  id="digit_display">
           <div style="margin-top:-20px;margin-bottom:20px" class="">
-           <a>SUM ETH <a class="test" href="JavaScript:newPopup('./info.html');"> <i id="minVal" style="font-size:18px; color:#34f6e5" class="fa" title="minimum amount : 0.005 ETH">&#xf05a;</i></a></a> <br>
+           <a>SUM ETH  <i id="minVal" style="font-size:18px; color:#34f6e5" class="fa" title="minimum amount : 0.005 ETH">&#xf05a;</i></a> <br>
           </div>
            <input id="input_value"  style="text-align:right" type="text" maxlength="21" value="1">
 
@@ -130,7 +131,7 @@ class="block">
   <!-- price stage conifg -->
 
 
-    
+
     <div class="mineth">
       <span style="margin-right:10px">1ETH</span> miniumum investment
     </div>
@@ -167,6 +168,9 @@ class="block">
       <a id="metamask" type="button"  name="metamask" onclick="bayMetamask()">METAMASK</a>
     </div>
   </div>
+
+
+
 
     <br /><br />
     Your account address (use a test account) from which to interact with the contract:<br />
