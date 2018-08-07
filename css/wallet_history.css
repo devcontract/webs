@@ -1,0 +1,135 @@
+
+
+//* .navBut {
+
+  width: 100%;
+} *//
+
+ table {
+  width: 100%;
+  }
+ table, th, td {
+  border: 1px solid none;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 5px;
+  text-align: center;
+}
+
+table#t01 th {
+  background-color: grey;
+  color: black;
+}
+tr.tspacing {
+  padding-bottom: 10px;
+}
+
+.devider{
+  margin-top: 100px;
+}
+
+tbody{
+  text-align: left;
+  color:#171339;
+  font-weight: bold;
+}
+
+
+.grid2 {
+padding-top: 10px;
+margin-left: 25px;
+display:inline-grid ;
+width: 100px;
+height: 30px;
+text-align: center;
+word-break: break-all;
+word-wrap: break-word;
+font-size: 13px;
+}
+
+.grid3 {
+margin-left: 20px;
+display:inline-grid ;
+width: 100px;
+height: 15px;
+text-align: center;
+word-break: break-all;
+word-wrap: break-word;
+color: black;
+font-size: 11px;
+font-weight: bold;
+font-family: monospace;
+}
+
+.attributes{
+  margin:0 auto;
+  width: 1010px;
+margin-bottom: 100px;
+}
+
+
+
+#stringbase{
+  width: 100%;
+
+  margin: auto;
+font-weight: bold;
+font-family:monospace;
+  display: inline;
+  padding-bottom: 20px;
+font-size: 13px;
+
+
+
+
+}
+
+
+#colorfun{
+
+background-color: rgb(217, 162, 115);
+
+font-family:monospace;
+font-size: 13px;
+
+}
+
+/*#colorFun:hover{
+
+  cursor: pointer;
+
+    border-bottom:1px dotted black;
+    border-bottom-left-radius: 20px;
+    box-shadow: 5px 5px 5px #aaaaaa;
+}*/
+
+button {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: #34f6e5; /* Green */
+    color: white;
+}
+button.grid2{
+background-color: white;
+}
+/* button.grid2:hover{
+cursor: pointer;
+
+color: black;
+box-shadow: 3px 4px grey ;
+
+} */
+button {
+    -webkit-transition-duration: 0.6s; /* Safari */
+    transition-duration: 0.6s;
+}
+
+button:hover {
+    background-color: #34f6e5; /* rose */
+    color: white;
+}
