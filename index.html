@@ -16,6 +16,7 @@
 <link rel="stylesheet" href="./css/third.css">
 <link rel="stylesheet" href="./css/pur_tok.css">
 <link rel="stylesheet" href="./css/tok_withdrawal.css">
+<link rel="stylesheet" href="./css/wallet_history.css">
 
 
 <body>
@@ -45,8 +46,8 @@
   </div>
   <div style="min-height: 210px;max-height: 1px;padding-top: 1px;border-top-left-radius: 18px; border-top-right-radius: 18px" class="block">
     <div class="img_bar">
-      <img style="margin: 25px 0 0 9px;" id="back_ground" src="./img/bckgrnd_sprite.png" alt="">
-      <div style="margin-left:9px;" class="">
+      <img style="margin: 40px 0 0 9px;" id="back_ground" src="./img/bckgrnd_sprite.png" alt="">
+      <div style="margin:12px 0 0 9px;" class="">
 
 
         <img style="visibility:hidden" id="arrLeft" src="./img/arrows/arrLeft.png" alt="">
@@ -60,7 +61,7 @@
       </div>
       <div class="label">
 
-        <div style="position:relative;left:70px;top:-15px;" class="stage">
+        <div style="position:relative;left:70px;top:-10px;" class="stage">
 
 
           <div class="label" id="label1">Stage1</div>
@@ -211,9 +212,89 @@
     <div class="button">
       <a id="myetherwallet" type="button" href="https://www.myetherwallet.com/#send-transaction" name="myetherwallet">MYETHERWALLET</a>
       <a id="metamask" type="button"  name="metamask" onclick="withdrawToken()">METAMASK</a>
-      
+<!-- if needed please change above buttons id-->
+    <!--<a href="./pur_tok.html" name="button" id="myetherwallet2">MYETHERWALLET</a>
+      <a href="./pur_tok.html" name="button" id="metamask2">METAMASK</a>-->
   </div>
   </div>
+
+  <div style="margin-top:5px; height:500px; padding-top:15px;" class="block">
+
+
+        <div  class="tokenvalue">
+          <h1 class="t"><span id="tokencap"></span> ETH</h1>
+        </div>
+
+      <div class="warning">
+        <p>The addresses must be exactly the same as the address
+        you will send your paymant from.<br>
+        Do not enter or pay from an exchange address!</p>
+      </div>
+    <div class="textwhite">
+      <p>You can easelly withdraw your ETH by using Metamask if you do not have a
+      Metamask, read the unstruction on how to install it.<a href="JavaScript:newPopup('./info.html');"> <i style="font-size:18px; color:white" class="fa">&#xf05a;</i></a> </p>
+      <p>Also you can withdraw your token using MyEthereWallet.
+      Please note that it is more complicated way to do it.
+    Please read the instructions on how to interact with smart contract with MyEthereWallet.<a href="JavaScript:newPopup('./info.html');"> <i style="font-size:18px; color:white" class="fa">&#xf05a;</i></a> </p>
+    </div>
+
+    <div style="margin-top:20px;" class="limitprice">
+      <div class="gaslimit">Min GAS limit: <br><br>
+
+        <span style="margin-left:5px;" id="glimval_eth_withdr"></span>
+      </div>
+      <div class="gasprice">Min GAS price: <br><br>
+
+        <span style="margin-right:5px;" id="gprice_eth_withdr"></span>GWEI
+      </div>
+    </div>
+      <div style="text-align:center; height:30px;" class="addtok">
+        <p></p>
+      </div>
+
+      <div class="button">
+        <a id="myetherwallet" type="button" href="https://www.myetherwallet.com/#send-transaction" name="myetherwallet">MYETHERWALLET</a>
+        <a id="metamask" type="button"  name="metamask" onclick="refundEther()">METAMASK</a>
+
+      <!--  <a href="./pur_tok.html" name="button" id="myetherwallet">MYETHERWALLET</a>
+        <a href="./pur_tok.html" name="button" id="metamask">METAMASK</a>-->
+    </div>
+
+
+    </div>
+
+      <button id="mkarec" type="button" name="button" onclick="myFun()">make a record</button>
+
+<div style="height:100%" class="block">
+
+
+    <div class="attributes">
+
+
+
+
+
+      <div class="grid3" >#</div>
+      <div class="grid3" >Date</div>
+      <div class="grid3" >Type</div>
+      <div class="grid3" >Crypto Name</div>
+
+      <div  class="grid3">ETH amount</div>
+      <div class="grid3" >Crypto Amount</div>
+      <div class="grid3"> Stage Number</div>
+      <div class="grid3" >Payment Status</div>
+
+      </div>
+    <div id="string" class="string">
+      <img id="img1" style="width:1px;position:absolute;margin-left:140px" src="p1.png" alt="pixel">
+      <img id="img2" style="width:1px;position:absolute;margin-left:260px" src="p1.png" alt="pixel">
+      <img id="img3" style="width:1px;position:absolute;margin-left:385px" src="p1.png" alt="pixel">
+      <img id="img4" style="width:1px;position:absolute;margin-left:510px" src="p1.png" alt="pixel">
+      <img id="img5" style="width:1px;position:absolute;margin-left:630px" src="p1.png" alt="pixel">
+      <img id="img6" style="width:1px;position:absolute;margin-left:760px" src="p1.png" alt="pixel">
+      <img id="img7" style="width:1px;position:absolute;margin-left:880px" src="p1.png" alt="pixel">
+    </div>
+</div>
 
   <div>
     <div>
@@ -237,6 +318,225 @@
 
   <script type="text/javascript" src="./js/index.js" async></script>
   <script type="text/javascript" src="./js/web3.min.js"></script>
+<script type="text/javascript"> // this function copy wallet address
+function copyClip() {
+  var copyText = document.getElementById('inpaymentadd');
+  copyText.select();
+  document.execCommand("copy");
+}
+</script>
+  <script type="text/javascript" async>
+  var indexNum = 1; //---------------------------index function this function generates record in wallet history
+var i = 0;
+   function myFun() {
+
+   var date = new Date();
+   var montharray = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"];
+   var month = montharray[date.getMonth()];
+   var year = date.getFullYear();
+   var day = date.getDate();
+   var hours = date.getHours();
+   var minutes = date.getMinutes();
+   var seconds = date.getSeconds();
+   var time = hours +":"+ minutes +":"+ seconds;
+   var fulldate =   time; //" "+  month +" "+ day +" "+///
+
+
+
+//---------------------------
+
+//---------------------------
+function shuffle(array){                                         // this function is shuffling array
+ var currentIndex = array.length, temporaryValue, randomIndex;
+
+   // While there remain elements to shuffle...
+   while (0 !== currentIndex) {
+
+     // Pick a remaining element...
+     randomIndex = Math.floor(Math.random() * currentIndex);
+     currentIndex -= 1;
+
+     // And swap it with the current element.
+     temporaryValue = array[currentIndex];
+     array[currentIndex] = array[randomIndex];
+     array[randomIndex] = temporaryValue;
+   }
+
+   return array;
+ }
+var type = ["Withdrawals", "Purchase"];
+var crypamount = Math.floor((Math.random() * 8995) + 10);
+var ethamount =  Math.floor((crypamount / 1123) * 931234);
+var stagenum = [1, 2, 3];
+var status = ["Pending", "Failed", "Succeeded"]
+shuffle(type);
+shuffle(stagenum);
+shuffle(status);
+
+//  values[0] = [ indexfun(), fulldate, type[0], "kak" , ethamount, crypamount, stagenum[0] , status[0]];
+
+   function displayDiv() {                                // this function creates div with data
+
+     var div = document.createElement("div");
+     div.style.backgroundColor = "none";
+
+   //  div.style.borderRight = "1px solid #02b3f4"
+     div.style.color = 'black';
+     div.id = 'stringbase';
+     div.setAttribute('class', 'grid2');
+     document.getElementById('string').appendChild(div);
+
+
+
+   var div = document.createElement("div");
+   div.innerHTML =  indexNum++;
+   div.style.color = 'black';
+   div.setAttribute('class', 'grid2');
+   document.getElementById('stringbase').appendChild(div);
+
+
+
+
+
+   var div = document.createElement("div");
+   div.innerHTML = fulldate  ;
+   div.style.color = 'black';
+
+   div.setAttribute('class', 'grid2');
+   document.getElementById('stringbase').appendChild(div);
+
+
+
+   var div = document.createElement("button");
+   div.innerHTML = type[0];
+   div.style.color = 'white';
+   div.style.cursor = 'pointer';
+   div.style.textShadow = '2px 2px black';
+
+   div.style.border = 'none';
+   div.style.backgroundColor = '#1abf93';
+   div.style.height = "30px";
+   div.style.paddingTop = "0px";
+   div.setAttribute('class', 'grid2');
+   div.setAttribute('onclick', 'window.location.href="https://etherscan.io"');
+
+   document.getElementById('stringbase').appendChild(div);
+
+
+
+
+   var div = document.createElement("div");
+   div.innerHTML = "kak";
+   div.style.color = 'black';
+
+
+   div.setAttribute('class', 'grid2');
+   document.getElementById('stringbase').appendChild(div);
+
+
+
+   var div = document.createElement("div");
+   div.innerHTML = ethamount;
+   div.style.color = 'black';
+   div.setAttribute('class', 'grid2');
+
+   document.getElementById('stringbase').appendChild(div);
+
+
+
+
+   var div = document.createElement("div");
+   div.innerHTML = crypamount;
+   div.style.color = 'black';
+   div.setAttribute('class', 'grid2');
+   document.getElementById('stringbase').appendChild(div);
+
+
+
+
+   var div = document.createElement("div");
+   div.innerHTML = stagenum[0];
+   div.style.color = 'black';
+   div.setAttribute('class', 'grid2');
+   document.getElementById('stringbase').appendChild(div);
+
+
+
+   var color = colorFun() ;
+   var div = document.createElement("button");
+   div.innerHTML =  status[0] +  "<br><br>";
+   div.style.color = color;
+
+   div.style.height = "100%";
+   div.id = indexNum;
+   div.style.cursor = "pointer";
+   div.style.backgroundColor = color;
+div.style.color = "white";
+div.style.height = "30px";
+div.style.paddingTop = "4px";
+div.style.textShadow = '2px 2px black';
+   div.setAttribute('class', 'grid2');
+   div.setAttribute('onclick', 'window.location.href="https://etherscan.io"');
+   document.getElementById('stringbase').appendChild(div);
+
+
+
+   function openLink() {
+       window.open("https://etherscan.io");
+   }
+
+   function myFunction(){
+
+     i = i + 40;
+   /*  var px = i +"px";
+      document.getElementById('img1').style.height = px;
+      document.getElementById('img2').style.height = px;
+      document.getElementById('img3').style.height = px;
+      document.getElementById('img4').style.height = px;
+   */
+   var ll1 = document.querySelector("#img1");
+   ll1.setAttribute("height", i);
+
+    var ll2 = document.querySelector("#img2");
+   ll2.setAttribute("height", i);
+
+   var ll3 = document.querySelector("#img3");
+   ll3.setAttribute("height", i);
+   var ll4 = document.querySelector("#img4");
+   ll4.setAttribute("height", i);
+   var ll2 = document.querySelector("#img5");
+  ll2.setAttribute("height", i);
+
+  var ll3 = document.querySelector("#img6");
+  ll3.setAttribute("height", i);
+  var ll4 = document.querySelector("#img7");
+  ll4.setAttribute("height", i);
+
+   }
+   myFunction();
+
+
+function colorFun(){                        // this function is checking the status and applying color accordingly
+var curColor ;
+if (status[0] == "Pending"){
+ curColor = "orange";
+ return curColor;
+} else if (status[0] == "Failed") {
+ curColor = "red";
+ return curColor;
+} else if (status[0] == "Succeeded"){
+ curColor = "#1abf93";
+ return curColor;
+}
+
+}
+
+}
+ displayDiv();
+
+
+}
+  </script>
 </body>
 
 </html>
