@@ -17,6 +17,8 @@
 <link rel="stylesheet" href="./css/pur_tok.css">
 <link rel="stylesheet" href="./css/tok_withdrawal.css">
 <link rel="stylesheet" href="./css/wallet_history.css">
+<link rel="stylesheet" href="./css/modal.css">
+<link rel="stylesheet" href="./css/pop_up_window.css">
 
 <script type="text/javascript" src="./log.js"></script>
 
@@ -177,7 +179,7 @@
 
     <div class="button">
 
-      <a id="myetherwallet" type="button" href="https://www.myetherwallet.com/#send-transaction" name="myetherwallet">BUY WITH MYETHERWALLET</a>
+      <a id="myetherwallet" type="button" href="https://www.myetherwallet.com/#send-transaction" target="_blank" name="myetherwallet">BUY WITH MYETHERWALLET</a>
       <a id="metamask" type="button" name="metamask" onclick="bayMetamask()">BUY WITH METAMASK</a>
 
     </div>
@@ -198,9 +200,9 @@
       <p>The addresses must be exactly the same as the address you will send your paymant from.<br> Do not enter or pay from an exchange address!</p>
     </div>
     <div class="textwhite">
-      <p>You can easelly withdraw your token by using Metamask if you do not have a Metamask, read the unstruction on how to install it.<i style="font-size:18px; color:#00BEA3" class="fa">&#xf05a;</i></a>
+      <p>You can easelly withdraw your token by using Metamask if you do not have a Metamask, read the unstruction on how to install it.<a href="JavaScript:newPopup('./info.html');"> <i style="font-size:18px; color:#00BEA3" class="fa">&#xf05a;</i></a></p>
       </p>
-      <p>Also you can withdraw your token using MyEthereWallet. Please note that it is more complicated way to do it. Please read the instructions on how to interact with smart contract with MyEthereWallet.<a href="JavaScript:newPopup('./info.html');"> <i style="font-size:18px; color:#00BEA3" class="fa">&#xf05a;</i></a>        </p>
+      <p>Also you can withdraw your token using MyEthereWallet. Please note that it is more complicated way to do it. Please read the instructions on how to interact with smart contract with MyEthereWallet.<a href="JavaScript:newPopup('./info.html');"> <i style="font-size:18px; color:#00BEA3" class="fa">&#xf05a;</i></a></p>
     </div>
 
     <div style="margin-top:0px;" class="limitprice">
@@ -214,10 +216,10 @@
       </div>
     </div>
     <div style="text-align:center" class="addtok">
-      <p>Add this KAK Token address to your Wallet to see Your Tokens <a href="JavaScript:newPopup('./info2.html');"> <i style="font-size:18px; color:#00BEA3" class="fa">&#xf05a;</i></a></p>
+      <p>Add this KAK Token address to your Wallet to see Your Tokens <i id="myBtn" style="font-size:18px; color:#00BEA3" class="fa">&#xf05a;</i></p>
     </div>
     <div class="button">
-      <a id="myetherwallet" type="button" href="https://www.myetherwallet.com/#send-transaction" name="myetherwallet">WITHDRAWAL WITH MYETHERWALLET</a>
+      <a id="myetherwallet" type="button" href="https://www.myetherwallet.com/#send-transaction" target="_blank" name="myetherwallet">WITHDRAWAL WITH MYETHERWALLET</a>
       <a id="metamask" type="button" name="metamask" onclick="withdrawToken()">WITHDRAWAL WITH METAMASK</a>
       <!-- if needed please change above buttons id-->
       <!--<a href="./pur_tok.html" name="button" id="myetherwallet2">MYETHERWALLET</a>
@@ -258,7 +260,7 @@ You can take back your investments variable</span>
     </div>
 
     <div class="button">
-      <a id="myetherwallet" type="button" href="https://www.myetherwallet.com/#send-transaction" name="myetherwallet">REFUND WITH MYETHERWALLET</a>
+      <a id="myetherwallet" type="button" href="https://www.myetherwallet.com/#send-transaction" target="_blank" name="myetherwallet">REFUND WITH MYETHERWALLET</a>
       <a id="metamask" type="button" name="metamask" onclick="refundEther()">REFUND WITH METAMASK</a>
 
       <!--  <a href="./pur_tok.html" name="button" id="myetherwallet">MYETHERWALLET</a>
@@ -297,6 +299,35 @@ You can take back your investments variable</span>
     </div>
   </div>
 
+
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+
+      <div class="pop_up_container">
+        <div class="addwind">
+          <span class="close">&times;</span>
+        <span style="font-weight:bold;">Token Contract address</span>
+
+           <input id="pop_up_window_input" type="text" name="" value=""> <br>
+          Token Symbol <br>
+          <input id="pop_up_window_token_name" type="text" name="" value=""><br>
+          Decimals of Precision <br>
+          <input id="pop_up_window_decimal" type="text" name="" value="18"><br>
+          <div class="copy">
+            <p>Copy this address to your wallet to view your KAK token.
+            Do not send funds to this addres.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
   <div>
     <div>
       <br /><br /> Your account address (use a test account) from which to interact with the contract:<br />
@@ -308,7 +339,7 @@ You can take back your investments variable</span>
       <br /><br />
     </div>
   </div>
-
+<script type="text/javascript" src="./js/modal.js" ></script>
   <script type="text/javascript">
     // Popup window code
     function newPopup(url) {
