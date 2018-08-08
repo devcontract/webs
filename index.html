@@ -19,6 +19,7 @@
 <link rel="stylesheet" href="./css/wallet_history.css">
 
 <script type="text/javascript" src="./log.js"></script>
+
 <body>
 
   <div style="min-height: 80px;max-height: 1px;padding-top: 10px;border-top-left-radius:18px; border-top-right-radius: 18px" class="block">
@@ -136,7 +137,7 @@
 
       <div id="digit_display">
         <div class="">
-          <a>SUM ETH  <i id="minVal" style="font-size:18px; color:#34f6e5" class="fa" title="minimum amount : 0.005 ETH">&#xf05a;</i></a> <br>
+          <a>SUM ETH  <i id="minVal" style="font-size:18px; color:#00BEA3" class="fa" title="minimum amount : 0.005 ETH">&#xf05a;</i></a> <br>
         </div>
         <input id="input_value" style="text-align:right" type="text" maxlength="21" value="1">
 
@@ -174,8 +175,8 @@
 
     <div class="button">
 
-       <a id="myetherwallet" type="button" href="https://www.myetherwallet.com/#send-transaction" name="myetherwallet">MYETHERWALLET</a>
-      <a id="metamask" type="button"  name="metamask" onclick="bayMetamask()">METAMASK</a>
+      <a id="myetherwallet" type="button" href="https://www.myetherwallet.com/#send-transaction" name="myetherwallet">BUY WITH MYETHERWALLET</a>
+      <a id="metamask" type="button" name="metamask" onclick="bayMetamask()">BUY WITH METAMASK</a>
 
     </div>
   </div>
@@ -183,20 +184,24 @@
   <div style="margin-top:5px; height:500px" class="block">
 
     <br>
+    <div class="reachedwindow" style="height:30px">
+    <span id="softcap_reached_token_withdrawal" class="softcr">Softcap is reached you can now withdraw variable</span>
+    </div>
     <div class="tokenvalue">
-      <h2 class="t"><span id="tokencap"></span><span style="margin: 5px;" id="token_name5"></span> tokens</h2>
+
+      <h2 class="t"><span id="tokencap"></span><span style="margin: 5px;" id="token_name5">342342</span>TOKENS</h2>
     </div>
 
     <div class="warning">
       <p>The addresses must be exactly the same as the address you will send your paymant from.<br> Do not enter or pay from an exchange address!</p>
     </div>
     <div class="textwhite">
-      <p>You can easelly withdraw your token by using Metamask if you do not have a Metamask, read the unstruction on how to install it.<i style="font-size:18px; color:#34f6e5" class="fa">&#xf05a;</i></a>
+      <p>You can easelly withdraw your token by using Metamask if you do not have a Metamask, read the unstruction on how to install it.<i style="font-size:18px; color:#00BEA3" class="fa">&#xf05a;</i></a>
       </p>
-      <p>Also you can withdraw your token using MyEthereWallet. Please note that it is more complicated way to do it. Please read the instructions on how to interact with smart contract with MyEthereWallet.<a href="JavaScript:newPopup('./info.html');"> <i style="font-size:18px; color:#34f6e5" class="fa">&#xf05a;</i></a>        </p>
+      <p>Also you can withdraw your token using MyEthereWallet. Please note that it is more complicated way to do it. Please read the instructions on how to interact with smart contract with MyEthereWallet.<a href="JavaScript:newPopup('./info.html');"> <i style="font-size:18px; color:#00BEA3" class="fa">&#xf05a;</i></a>        </p>
     </div>
 
-    <div style="margin-top:20px;" class="limitprice">
+    <div style="margin-top:0px;" class="limitprice">
       <div class="gaslimit">Min GAS limit: <br><br>
 
         <span style="margin-left:5px;" id="glimval_token_withdr"></span>
@@ -207,38 +212,36 @@
       </div>
     </div>
     <div style="text-align:center" class="addtok">
-      <p>Add this KAK Token address to your Wallet to see Your Tokens  <i style="font-size:18px; color:#34f6e5" class="fa">&#xf05a;</i></p>
+      <p>Add this Token address to your Wallet to see Your Tokens <i style="font-size:18px; color:#00BEA3" class="fa">&#xf05a;</i></p>
     </div>
     <div class="button">
-      <a id="myetherwallet" type="button" href="https://www.myetherwallet.com/#send-transaction" name="myetherwallet">MYETHERWALLET</a>
-      <a id="metamask" type="button"  name="metamask" onclick="withdrawToken()">METAMASK</a>
-<!-- if needed please change above buttons id-->
-    <!--<a href="./pur_tok.html" name="button" id="myetherwallet2">MYETHERWALLET</a>
+      <a id="myetherwallet" type="button" href="https://www.myetherwallet.com/#send-transaction" name="myetherwallet">WITHDRAWAL WITH MYETHERWALLET</a>
+      <a id="metamask" type="button" name="metamask" onclick="withdrawToken()">WITHDRAWAL WITH METAMASK</a>
+      <!-- if needed please change above buttons id-->
+      <!--<a href="./pur_tok.html" name="button" id="myetherwallet2">MYETHERWALLET</a>
       <a href="./pur_tok.html" name="button" id="metamask2">METAMASK</a>-->
-  </div>
+    </div>
   </div>
 
   <div style="margin-top:5px; height:500px; padding-top:15px;" class="block">
-
-
-        <div  class="tokenvalue">
-          <h1 class="t"><span id="refund"></span> ETH</h1>
-        </div>
-
-      <div class="warning">
-        <p>The addresses must be exactly the same as the address
-        you will send your paymant from.<br>
-        Do not enter or pay from an exchange address!</p>
-      </div>
-    <div class="textwhite">
-      <p>You can easelly withdraw your ETH by using Metamask if you do not have a
-      Metamask, read the unstruction on how to install it.<a href="JavaScript:newPopup('./info.html');"> <i style="font-size:18px; color:white" class="fa">&#xf05a;</i></a> </p>
-      <p>Also you can withdraw your token using MyEthereWallet.
-      Please note that it is more complicated way to do it.
-    Please read the instructions on how to interact with smart contract with MyEthereWallet.<a href="JavaScript:newPopup('./info.html');"> <i style="font-size:18px; color:white" class="fa">&#xf05a;</i></a> </p>
+    <div class="reachedwindow" style="height:30px">
+    <span id="softcap_reached_eth_refund" class="softcr">Unfortunately Softcap has not been reached .
+You can take back your investments variable</span>
     </div>
 
-    <div style="margin-top:20px;" class="limitprice">
+    <div class="tokenvalue">
+      <h2 class="t"><span style="padding-right:5px;" id="refund">123123</span>ETH</h2>
+    </div>
+
+    <div class="warning">
+      <p>The addresses must be exactly the same as the address you will send your paymant from.<br> Do not enter or pay from an exchange address!</p>
+    </div>
+    <div class="textwhite">
+      <p>You can easelly withdraw your ETH by using Metamask if you do not have a Metamask, read the unstruction on how to install it.<a href="JavaScript:newPopup('./info.html');"> <i style="font-size:18px; color:#00BEA3" class="fa">&#xf05a;</i></a> </p>
+      <p>Also you can withdraw your token using MyEthereWallet. Please note that it is more complicated way to do it. Please read the instructions on how to interact with smart contract with MyEthereWallet.<a href="JavaScript:newPopup('./info.html');"> <i style="font-size:18px; color:#00BEA3" class="fa">&#xf05a;</i></a>        </p>
+    </div>
+
+    <div style="margin-top:0px;" class="limitprice">
       <div class="gaslimit">Min GAS limit: <br><br>
 
         <span style="margin-left:5px;" id="glimval_eth_Refund"></span>
@@ -248,39 +251,39 @@
         <span style="margin-right:5px;" id="gprice_eth_Refund"></span>GWEI
       </div>
     </div>
-      <div style="text-align:center; height:30px;" class="addtok">
-        <p></p>
-      </div>
+    <div style="text-align:center; height:30px;" class="addtok">
+    <p>Add this ETH address to your Wallet to see Your ETH <i style="font-size:18px; color:#00BEA3" class="fa">&#xf05a;</i></p>
+    </div>
 
-      <div class="button">
-        <a id="myetherwallet" type="button" href="https://www.myetherwallet.com/#send-transaction" name="myetherwallet">MYETHERWALLET</a>
-        <a id="metamask" type="button"  name="metamask" onclick="refundEther()">METAMASK</a>
+    <div class="button">
+      <a id="myetherwallet" type="button" href="https://www.myetherwallet.com/#send-transaction" name="myetherwallet">REFUND WITH MYETHERWALLET</a>
+      <a id="metamask" type="button" name="metamask" onclick="refundEther()">REFUND WITH METAMASK</a>
 
       <!--  <a href="./pur_tok.html" name="button" id="myetherwallet">MYETHERWALLET</a>
         <a href="./pur_tok.html" name="button" id="metamask">METAMASK</a>-->
     </div>
 
 
-    </div>
+  </div>
 
-      <button id="mkarec" type="button" name="button" onclick="log()">make a record</button>
+  <button id="mkarec" type="button" name="button" onclick="log()">make a record</button>
 
-<div style="height:100%" class="block">
+  <div style="height:100%" class="block">
 
 
     <div class="attributes">
 
-      <div class="grid3" >#</div>
-      <div class="grid3" >Date</div>
-      <div class="grid3" >Type</div>
-      <div class="grid3" >Crypto Name</div>
+      <div class="grid3">#</div>
+      <div class="grid3">Date</div>
+      <div class="grid3">Type</div>
+      <div class="grid3">Crypto Name</div>
 
-      <div  class="grid3">ETH amount</div>
-      <div class="grid3" >Crypto Amount</div>
+      <div class="grid3">ETH amount</div>
+      <div class="grid3">Crypto Amount</div>
       <div class="grid3"> Stage Number</div>
-      <div class="grid3" >Payment Status</div>
+      <div class="grid3">Payment Status</div>
 
-      </div>
+    </div>
     <div id="string" class="string">
       <img id="img1" style="width:1px;position:absolute;margin-left:140px" src="./img/p1.png" alt="pixel">
       <img id="img2" style="width:1px;position:absolute;margin-left:260px" src="./img/p1.png" alt="pixel">
@@ -290,7 +293,7 @@
       <img id="img6" style="width:1px;position:absolute;margin-left:760px" src="./img/p1.png" alt="pixel">
       <img id="img7" style="width:1px;position:absolute;margin-left:880px" src="./img/p1.png" alt="pixel">
     </div>
-</div>
+  </div>
 
   <div>
     <div>
@@ -313,15 +316,16 @@
   </script>
 
   <script type="text/javascript" src="./js/index.js" async></script>
-  
+
   <script type="text/javascript" src="./js/web3.min.js"></script>
-<script type="text/javascript"> // this function copy wallet address
-function copyClip() {
-  var copyText = document.getElementById('inpaymentadd');
-  copyText.select();
-  document.execCommand("copy");
-}
-</script>
+  <script type="text/javascript">
+    // this function copy wallet address
+    function copyClip() {
+      var copyText = document.getElementById('inpaymentadd');
+      copyText.select();
+      document.execCommand("copy");
+    }
+  </script>
 </body>
 
 </html>
