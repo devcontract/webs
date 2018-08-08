@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+
+
+body{
+  background-color: white;
+}
+      input{
+        width: 290px;}
+        .addwind{
+          margin: 0 auto;
+          width: 350px;
+          margin-top: 30px;
+          background-color: #7996A2;
+          color: black;
+          border-radius: 10px;
+          padding: 5px;
+
+        }
+        .copy{
+          margin: 0 auto;
+          width: 350px;
+          word-wrap: normal;
+          color: black;
+          font-weight: bold;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="addwind">
+      <span style="font-weight:bold;">Token Contract address</span>
+        <a href="JavaScript:newPopup('./info.html');"> <i style="font-size:18px; color:#00BEA3" class="fa">&#xf05a;</i></a></p>
+         <br>
+
+        <input type="text" name="" value="0x66a945a11483e05bedb37474ca29ad6e8656c4f4"> <br>
+        Token Symbol <br>
+        <input type="text" name="" value="KAK"><br>
+        Decimals of Precision <br>
+        <input type="text" name="" value="18"><br>
+      </div>
+<div class="copy">
+  <p>Copy this address to your wallet to view your KAK token.<a href="JavaScript:newPopup('./info.html');"> <i style="font-size:18px; color:white" class="fa">&#xf05a;</i></a><br>
+  Do not send funds to this addres.</p>
+</div>
+    </div>
+
+    <script type="text/javascript">
+    function newPopup(url) {
+    popupWindow = window.open(
+      url,'popUpWindow','height=300,width=400,left=200,top=200,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
+    }
+    </script>
+  </body>
+</html>
