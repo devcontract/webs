@@ -39,7 +39,7 @@ tbody{
 
 .grid2 {
 padding-top: 10px;
-margin-left: 25px;
+margin-left: 40px;
 display:inline-grid ;
 width: 100px;
 height: 30px;
@@ -50,7 +50,8 @@ font-size: 13px;
 }
 
 .grid3 {
-margin-left: 20px;
+  margin-top: 15px;
+margin-left: 25px;
 display:inline-grid ;
 width: 100px;
 height: 15px;
@@ -58,7 +59,7 @@ text-align: center;
 word-break: break-all;
 word-wrap: break-word;
 color: black;
-font-size: 11px;
+font-size: 15px;
 font-weight: bold;
 font-family: monospace;
 }
@@ -66,24 +67,16 @@ font-family: monospace;
 .attributes{
   margin:0 auto;
   width: 1010px;
-margin-bottom: 100px;
+  margin-left: 30px;
+  margin-bottom: 50px;
 }
-
-
 
 #stringbase{
   width: 100%;
-
   margin: auto;
-font-weight: bold;
-font-family:monospace;
   display: inline;
   padding-bottom: 20px;
-font-size: 13px;
-
-
-
-
+  font-size: 10px;
 }
 
 

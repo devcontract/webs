@@ -1,8 +1,8 @@
 
-   var indexNum = 1; 
+   var indexNum = 1;
    var i = 0;
 
-function log(){ 
+function log(){
    showLog();
    line();
 }
@@ -15,13 +15,12 @@ function  showLog(){
      createDiv("TES");
      createDiv(rand());
      createDiv(rand());
-     createDiv(rand());
      createButton("pending", "red");
 }
 
 function rand(){
    return Math.floor((Math.random() * 8995) + 10);
-}  
+}
 function createButton(data, color){
    var div = document.createElement("button");
    div.innerHTML = data +  "<br><br>";
@@ -59,8 +58,8 @@ function createBase(){
 function line(){
    i = i + 40;
    var pixel;
-    for (var index = 1; index <= 7; index++) {
+    for (var index = 1; index <= 6; index++) {
        pixel = document.querySelector("#img" + index);
        pixel.setAttribute("height", i);
-    }   
+    }
 }
