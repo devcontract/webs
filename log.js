@@ -1,10 +1,10 @@
 
 
-var indexNum = 1; 
+var indexNum = 1;
 var i = 0;
 var txHref = "https://etherscan.io";
 
-function log(){ 
+function log(){
    showLog();
    line();
 }
@@ -23,22 +23,23 @@ function  showLog(){
 
 function rand(){
    return Math.floor((Math.random() * 8995) + 10);
-}  
+}
 function createButton(data, color){
-   var div = document.createElement("button");
-   div.innerHTML = data +  "<br><br>";
-   div.style.color = color;
-   div.style.height = "100%";
-   div.id = indexNum;
-   div.style.cursor = "pointer";
-   div.style.backgroundColor = color;
-   div.style.border = 'none';
-   div.style.color = "white";
-   div.style.height = "30px";
-   div.style.paddingTop = "4px";
-   div.style.textShadow = '2px 2px black';
-   div.setAttribute('class', 'grid2');
-   div.setAttribute('onclick', 'window.location.href=txHref');
+   var div = document.createElement("a");
+   a.innerHTML = data +  "<br><br>";
+   a.style.color = color;
+   a.style.height = "100%";
+   a.id = indexNum;
+   a.style.cursor = "pointer";
+   a.style.backgroundColor = color;
+   a.style.border = 'none';
+   a.style.color = "white";
+   a.style.height = "30px";
+   a.style.paddingTop = "4px";
+   a.style.textShadow = '2px 2px black';
+   a.setAttribute('class', 'grid2');
+   a.setAttribute('href', txHref);
+   a.setAttribute('target', '_blank');
    document.getElementById('stringbase').appendChild(div);
  }
 
@@ -64,5 +65,5 @@ function line(){
     for (var index = 1; index <= 7; index++) {
        pixel = document.querySelector("#img" + index);
        pixel.setAttribute("height", i);
-    }   
+    }
 }
