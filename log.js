@@ -25,7 +25,7 @@ function rand(){
    return Math.floor((Math.random() * 8995) + 10);
 }
 function createButton(data, color){
-   var div = document.createElement("a");
+   var a = document.createElement("a");
    a.innerHTML = data +  "<br><br>";
    a.style.color = color;
    a.style.height = "100%";
