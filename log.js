@@ -4,14 +4,14 @@
 
 function log(){
    showLog();
-   line();
+  // line();
 }
 
 function  showLog(){
      createBase();
      createDiv(rand());
      createDiv(new Date().toDateString("yyyy/MM/dd"));
-     createButton("refund", "green");
+     createDiv("0x881c8a9f11fb17640df0d6632bddfaf6aa7df3bc67321486afbf892272709d09");
      createDiv("TES");
      createDiv(rand());
      createDiv(rand());
