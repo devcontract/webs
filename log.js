@@ -40,7 +40,7 @@ function createButton(data, color){
    a.setAttribute('class', 'grid2');
    a.setAttribute('href', txHref);
    a.setAttribute('target', '_blank');
-   document.getElementById('stringbase').appendChild(div);
+   document.getElementById('stringbase').appendChild(a);
  }
 
 function createDiv(data){
