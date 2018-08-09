@@ -1,18 +1,21 @@
 
-   var indexNum = 1;
-   var i = 0;
 
-function log(){
+var indexNum = 1; 
+var i = 0;
+var txHref = "https://etherscan.io";
+
+function log(){ 
    showLog();
-  // line();
+   line();
 }
 
 function  showLog(){
      createBase();
      createDiv(rand());
      createDiv(new Date().toDateString("yyyy/MM/dd"));
-     createDiv("0x881c8a9f11fb17640df0d6632bddfaf6aa7df3bc67321486afbf892272709d09");
+     createButton("refund", "green");
      createDiv("TES");
+     createDiv(rand());
      createDiv(rand());
      createDiv(rand());
      createButton("pending", "red");
@@ -20,7 +23,7 @@ function  showLog(){
 
 function rand(){
    return Math.floor((Math.random() * 8995) + 10);
-}
+}  
 function createButton(data, color){
    var div = document.createElement("button");
    div.innerHTML = data +  "<br><br>";
@@ -35,7 +38,7 @@ function createButton(data, color){
    div.style.paddingTop = "4px";
    div.style.textShadow = '2px 2px black';
    div.setAttribute('class', 'grid2');
-   div.setAttribute('onclick', 'window.location.href="https://etherscan.io"');
+   div.setAttribute('onclick', 'window.location.href=txHref');
    document.getElementById('stringbase').appendChild(div);
  }
 
@@ -58,8 +61,8 @@ function createBase(){
 function line(){
    i = i + 40;
    var pixel;
-    for (var index = 1; index <= 6; index++) {
+    for (var index = 1; index <= 7; index++) {
        pixel = document.querySelector("#img" + index);
        pixel.setAttribute("height", i);
-    }
+    }   
 }
