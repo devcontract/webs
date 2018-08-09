@@ -5,28 +5,30 @@
   word-wrap: normal;
   margin: 0 auto;
   text-align: center;
-  margin-top: 10px;
   color: red;
   font-size: 15px;
-
 }
 
 .warning {
-  width: 90%;
+  width: 605px;
   word-wrap: normal;
   margin: 0 auto;
   margin-top: 10px;
   color: pink;
-  font-size: 18px;
-  margin-left: 8%;
+  font-size: 12px;
+  text-align: justify;
+
+
 }
 
 .textwhite {
-  width: 85%;
+  width: 605px;
   word-wrap: normal;
   margin: 0 auto;
   color: black;
   font-weight: bold;
+  font-size: 12px;
+
 }
 
 .tokenwind {
@@ -44,7 +46,7 @@
 .tokenvalue {
   margin: 0 auto;
   height: 80px;
-  width: 85%;
+  width: 605px;
   border-radius: 5px;
 
   background-color: white;
@@ -64,15 +66,8 @@
   font-size: 13px;
   margin-top: 10px;
 }
-
-.gaslimit {
-  display: inline-block;
-  float: left;
-}
-
-.gasprice {
-  display: inline-block;
-  float: right;
+#myBtn:hover{
+  cursor:pointer;
 }
 
 

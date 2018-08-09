@@ -1,0 +1,19 @@
+input{
+  width: 290px;}
+  .addwind{
+    margin: 0 auto;
+    width: 350px;
+    margin-top: 30px;
+    background-color: #7996A2;
+    color: black;
+    border-radius: 10px;
+    padding: 5px;
+
+  }
+  .copy{
+    margin: 0 auto;
+    width: 350px;
+    word-wrap: normal;
+    color: black;
+    font-weight: bold;
+  }
