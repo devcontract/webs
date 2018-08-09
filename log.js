@@ -36,6 +36,7 @@ function createButton(data, color){
    a.style.color = "white";
    a.style.height = "30px";
    a.style.paddingTop = "4px";
+   a.style.textDecoration = "none";
    a.style.textShadow = '2px 2px black';
    a.setAttribute('class', 'grid2');
    a.setAttribute('href', txHref);
