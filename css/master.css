@@ -20,120 +20,145 @@ body {
     background-color: #7996A2;
 }
 
-#img_bar{
-  position: absolute;
-
-}
-#arrLeft{
+.module {
   position: relative;
-  bottom: 138px;
-  left: 0px;
+  top:30px;
+  max-width: 1010px;
+  min-width: 1010px;
+}
+
+#img_bar{                          /*This is DIV img_bar */
+  position: absolute;
+}
+#arrLeft{                          /*ARROWS --------------------------*/
+  position: absolute;
+  bottom: 3px;
+  left:8px;
 
 }
 #arrLeftsloj2{
-  position: relative;
-  bottom: 138px;
-  left: -288px;
+  position: absolute;
+  bottom: 3px;
+  left: 8px;
 
 }
 
 #arrow{
-  position: relative;
-  bottom: 138px;
-  left: -321px;
+  position: absolute;
+  bottom: 3px;
+  left: 227px;
 
 }
 #arrow_Sloj2{
-  position: relative;
-  bottom: 263px;
-  left: 255px;
+  position: absolute;
+  bottom:  3px;
+  left: 227px;
 
 }
 
 #arrow2{
-  position: relative;
-  bottom: 263px;
-  left:224px;
+  position: absolute;
+  bottom: 3px;
+  left: 414px;
 
 }
 #arrow2_Sloj2{
-  position: relative;
-  bottom: 263px;
-  left: -54px;
+  position: absolute;
+  bottom: 3px;
+  left: 414px;
 
 }
 
+#arrow3{
+  position: absolute;
+  bottom: 3px;
+  left: 601px;
 
+}
+#arrow3_Sloj2{
+  position: absolute;
+  bottom: 3px;
+  left: 601px;
+
+}
 
 
 #arrRight{
-  position: relative;
-  bottom: 388px;
-  left: 749px;
+  position: absolute;
+  bottom: 3px;
+  left: 788px;
 
 }
 #arrRightSloj2{
-  position: relative;
-  bottom: 388px;
-  left: 502px;
-
-}
-
-
-.label {
-  width: 50px;
   position: absolute;
-  font-size: 20px;
+  bottom: 3px;
+  left: 788px;
+
 }
+                           /*ARROWS --------------------------*/
+.label{
+  font-size: 20px;
+}                          /*labels --------------------------*/
+
 
 #label1{                   /* ARROW1 RIGHT %40 BONUS */
   position: absolute;
-top:-501px;
+top:-130px;
 left:20px;
 }
 
 #label2{                  /* ARROW2 25% BONUS */
   position: absolute;
-top:-501px;
-left:280px;
+top:-130px;
+left:238px;
 }
 
 #label3{                     /* ARROW3 bonus 10%*/
   position: absolute;
-top:-501px;
-left:525px;
+top:-130px;
+left:425px;
 }
 
 
-
+#label4{                     /* ARROW4 bonus 0%*/
+  position: absolute;
+top:-130px;
+left:612px;
+}
 
 #label5{                     /* ARROW1 RIGHT EXPECTAION1*/
   position: absolute;
-top:-420px;
+top: -30px;
 left:65px;
 }
 
 #label6{                     /* ARROW2 EXPECTAION2*/
-  position: relative;
-top:-420px;
-left:340px;
+  position: absolute;
+top:-30px;
+left:280px;
 }
 
 #label7{                     /* ARROW3  EXPECTAION3*/
   position: absolute;
-top:-420px;
-left:580px;
+top:-30px;
+left:468px;
 }
 
 #label8{                     /* ARROW4  EXPECTAION4*/
   position: absolute;
-top:-420px;
-left:828px;
+top:-30px;
+left:656px;
 }
-#label9{                     /* ARROW4  SaleFinished*/
+
+#label9{                     /* ARROW4  EXPECTAION4*/
   position: absolute;
-top:-471px;
-left:820px;
+top:-30px;
+left:850px;
+}
+#label10{                     /* ARROW4  EXPECTAION4*/
+  position: absolute;
+top:-75px;
+left:836px;
 }
 
 .green_line {

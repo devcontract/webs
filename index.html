@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-
+<!--branch-->
 
 <html lang="en" dir="ltr">
 
@@ -48,9 +48,10 @@
     </div>
   </div>
   <div style="min-height: 210px;max-height: 1px;padding-top: 1px;border-top-left-radius: 18px; border-top-right-radius: 18px" class="block">
-    <div class="img_bar">
-      <img style="margin: 40px 0 0 9px;" id="back_ground" src="./img/bckgrnd_sprite.png" alt="">
-      <div style="margin:12px 0 0 9px;" class="">
+    <div class="module">
+      <div style="margin:10px 0 0 7px;" class="img_bar">
+        <img id="back_ground" src="./img/bckgrnd_sprite.png" alt="">
+<div style="margin-left:-11px" class="">
 
 
         <img style="visibility:hidden" id="arrLeft" src="./img/arrows/arrLeft.png" alt="">
@@ -59,28 +60,30 @@
         <img style="visibility:hidden" id="arrow_Sloj2" src="./img/arrows/arrowsloj2.png" alt="">
         <img style="visibility:hidden" id="arrow2" src="./img/arrows/arrow.png" alt="">
         <img style="visibility:hidden" id="arrow2_Sloj2" src="./img/arrows/arrowsloj2.png" alt="">
+        <img style="visibility:hidden" id="arrow3" src="./img/arrows/arrow.png" alt="">
+        <img style="visibility:hidden" id="arrow3_Sloj2" src="./img/arrows/arrowsloj2.png" alt="">
         <img style="visibility:hidden" id="arrRight" src="./img/arrows/arrRight.png" alt="">
-        <img style="visibility:hidden;" id="arrRightSloj2" src="./img/arrows/arrRightSloj2.png" alt="">
-      </div>
-      <div class="label">
+        <img style="visibility:hidden" id="arrRightSloj2" src="./img/arrows/arrRightSloj2.png" alt="">
 
-        <div style="position:relative;left:70px;top:-10px;" class="stage">
+        <div class="label">
 
-
-          <div class="label" id="label1">Stage1</div>
-          <div class="label" id="label2">Stage2</div>
-          <div class="label" id="label3">Stage3</div>
-
+          <div style="position:relative;left:70px;top:10px" class="bonus">
+            <div class="label" id="label1">40%</div>
+            <div class="label" id="label2">25%</div>
+            <div class="label" id="label3">10%</div>
+            <div class="label" id="label4">0%</div>
+          </div>
+          <div style="position:relative;top:-45px;" class="status">
+            <div class="label" id="label5">Expectation</div>
+            <div class="label" id="label6">Expectation</div>
+            <div class="label" id="label7">Expectation</div>
+            <div class="label" id="label8">Expectation</div>
+            <div class="label" id="label9">Expectation</div>
+            <div class="label" id="label10">Sale Finished</div>
+          </div>
         </div>
-        <div style="position:relative;top:-40px;" id="status">
-          <div class="label" id="label5">Expectation</div>
-          <div class="label" id="label6">Expectation</div>
-          <div class="label" id="label7">Expectation</div>
-          <div class="label" id="label8">Expectation</div>
 
-          <div class="label" id="label9">SaleFinished</div>
-        </div>
-
+</div>
       </div>
     </div>
   </div>
@@ -154,7 +157,7 @@
     <div style="margin-top:30px" class="paymentadd">
       <h1>Payment Address</h1>
       <div class="adr">
-        <input id="inpaymentadd" type="text" name="address" value="0x66a945a11483e05bedb37474ca29ad6e8656c4f4" readonly onmousedown="return false" autocomplete=off>
+        <input id="paymentaddr" type="text" name="address" value="Payment Address" readonly onmousedown="return false" autocomplete=off>
       </div>
       <div class="copybtn">
         <button id="copybtn" type="button" name="copy" onclick="copyClip()">COPY</button>
@@ -227,7 +230,7 @@
     </div>
   </div>
 
-  <div style="margin-top:5px; height:500px; padding-top:15px;" class="block">
+  <div style="margin-top:5px; height:450px; padding-top:15px;" class="block">
     <div class="reachedwindow" style="height:30px">
     <span id="softcap_reached_eth_refund" class="softcr">Unfortunately Softcap has not been reached .
 You can take back your investments</span>
@@ -255,9 +258,7 @@ You can take back your investments</span>
         <span style="margin-right:5px;" id="gprice_eth_Refund"></span>GWEI
       </div>
     </div>
-    <div style="text-align:center; height:45px;" class="addtok">
-    <p></p>
-    </div>
+
 
     <div class="button">
       <a id="myetherwallet" type="button" href="https://www.myetherwallet.com/#send-transaction" target="_blank" name="myetherwallet">REFUND WITH MYETHERWALLET</a>
@@ -278,24 +279,22 @@ You can take back your investments</span>
     <div class="attributes">
 
       <div class="grid3">#</div>
-      <div class="grid3">Date</div>
+      <div class="grid3">TimeStamp</div>
+      <div class="grid3">TxHash</div>
+      <div class="grid3">BlockNumber</div>
+      <div class="grid3">Value</div>
       <div class="grid3">Type</div>
-      <div class="grid3">Crypto Name</div>
-
-      <div class="grid3">ETH amount</div>
-      <div class="grid3">Crypto Amount</div>
-      <div class="grid3"> Stage Number</div>
-      <div class="grid3">Payment Status</div>
+      <div class="grid3">Status</div>
 
     </div>
-    <div id="string" class="string">
-      <img id="img1" style="width:1px;position:absolute;margin-left:140px" src="./img/p1.png" alt="pixel">
-      <img id="img2" style="width:1px;position:absolute;margin-left:260px" src="./img/p1.png" alt="pixel">
-      <img id="img3" style="width:1px;position:absolute;margin-left:385px" src="./img/p1.png" alt="pixel">
-      <img id="img4" style="width:1px;position:absolute;margin-left:510px" src="./img/p1.png" alt="pixel">
-      <img id="img5" style="width:1px;position:absolute;margin-left:630px" src="./img/p1.png" alt="pixel">
-      <img id="img6" style="width:1px;position:absolute;margin-left:760px" src="./img/p1.png" alt="pixel">
-      <img id="img7" style="width:1px;position:absolute;margin-left:880px" src="./img/p1.png" alt="pixel">
+  <div  id="string" class="string">
+      <img id="img1" style="width:1px;position:absolute;margin-left:130px" src="./img/p1.png" alt="pixel">
+      <img id="img2" style="width:1px;position:absolute;margin-left:300px" src="./img/p1.png" alt="pixel">
+      <img id="img3" style="width:1px;position:absolute;margin-left:425px" src="./img/p1.png" alt="pixel">
+      <img id="img4" style="width:1px;position:absolute;margin-left:590px" src="./img/p1.png" alt="pixel">
+      <img id="img5" style="width:1px;position:absolute;margin-left:730px" src="./img/p1.png" alt="pixel">
+      <img id="img6" style="width:1px;position:absolute;margin-left:850px" src="./img/p1.png" alt="pixel">
+
     </div>
   </div>
 
@@ -344,7 +343,7 @@ You can take back your investments</span>
   <script type="text/javascript">
     // this function copy wallet address
     function copyClip() {
-      var copyText = document.getElementById('inpaymentadd');
+      var copyText = document.getElementById('paymentaddr');
       copyText.select();
       document.execCommand("copy");
     }
