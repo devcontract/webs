@@ -154,7 +154,7 @@
     <div style="margin-top:30px" class="paymentadd">
       <h1>Payment Address</h1>
       <div class="adr">
-        <input id="inpaymentadd" type="text" name="address" value="0x66a945a11483e05bedb37474ca29ad6e8656c4f4" readonly onmousedown="return false" autocomplete=off>
+        <input id="paymentaddr" type="text" name="address" value="Payment Address" readonly onmousedown="return false" autocomplete=off>
       </div>
       <div class="copybtn">
         <button id="copybtn" type="button" name="copy" onclick="copyClip()">COPY</button>
@@ -340,7 +340,7 @@ You can take back your investments</span>
   <script type="text/javascript">
     // this function copy wallet address
     function copyClip() {
-      var copyText = document.getElementById('inpaymentadd');
+      var copyText = document.getElementById('paymentaddr');
       copyText.select();
       document.execCommand("copy");
     }
