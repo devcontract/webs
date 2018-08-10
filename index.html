@@ -78,7 +78,7 @@
           <div class="label" id="label7">Expectation</div>
           <div class="label" id="label8">Expectation</div>
 
-          <div class="label" id="label9">SaleFinished</div>
+          <div class="label" id="label9">Sale Finished</div>
         </div>
 
       </div>
@@ -154,7 +154,7 @@
     <div style="margin-top:30px" class="paymentadd">
       <h1>Payment Address</h1>
       <div class="adr">
-        <input id="inpaymentadd" type="text" name="address" value="0x66a945a11483e05bedb37474ca29ad6e8656c4f4" readonly onmousedown="return false" autocomplete=off>
+        <input id="paymentaddr" type="text" name="address" value="Payment Address" readonly onmousedown="return false" autocomplete=off>
       </div>
       <div class="copybtn">
         <button id="copybtn" type="button" name="copy" onclick="copyClip()">COPY</button>
@@ -189,11 +189,11 @@
 
     <br>
     <div class="reachedwindow" style="height:30px">
-    <span id="softcap_reached_token_withdrawal" class="softcr">Softcap is reached you can now withdraw variable</span>
+    <span id="softcap_reached_token_withdrawal" class="softcr">Softcap is reached you can now withdraw</span>
     </div>
     <div class="tokenvalue">
 
-      <h2 class="t"><span id="tokencap"></span><span style="margin: 5px;" id="token_name5">342342</span>TOKENS</h2>
+      <h2 class="t"><span id="tokencap"></span><span style="margin: 5px;" id="token_name5"></span></h2>
     </div>
 
     <div class="warning">
@@ -227,14 +227,14 @@
     </div>
   </div>
 
-  <div style="margin-top:5px; height:500px; padding-top:15px;" class="block">
+  <div style="margin-top:5px; height:450px; padding-top:15px;" class="block">
     <div class="reachedwindow" style="height:30px">
     <span id="softcap_reached_eth_refund" class="softcr">Unfortunately Softcap has not been reached .
-You can take back your investments variable</span>
+You can take back your investments</span>
     </div>
 
     <div class="tokenvalue">
-      <h2 class="t"><span style="padding-right:5px;" id="refund">123123</span>ETH</h2>
+      <h2 class="t"><span style="padding-right:5px;" id="refund"></span>ETH</h2>
     </div>
 
     <div class="warning">
@@ -255,9 +255,7 @@ You can take back your investments variable</span>
         <span style="margin-right:5px;" id="gprice_eth_Refund"></span>GWEI
       </div>
     </div>
-    <div style="text-align:center; height:45px;" class="addtok">
-    <p></p>
-    </div>
+
 
     <div class="button">
       <a id="myetherwallet" type="button" href="https://www.myetherwallet.com/#send-transaction" target="_blank" name="myetherwallet">REFUND WITH MYETHERWALLET</a>
@@ -270,7 +268,7 @@ You can take back your investments variable</span>
 
   </div>
 
-  <button id="mkarec" type="button" name="button" onclick="log()">make a record</button>
+
 
   <div style="height:100%" class="block">
 
@@ -278,28 +276,26 @@ You can take back your investments variable</span>
     <div class="attributes">
 
       <div class="grid3">#</div>
-      <div class="grid3">Date</div>
+      <div class="grid3">TimeStamp</div>
+      <div class="grid3">TxHash</div>
+      <div class="grid3">BlockNumber</div>
+      <div class="grid3">Value</div>
       <div class="grid3">Type</div>
-      <div class="grid3">Crypto Name</div>
-
-      <div class="grid3">ETH amount</div>
-      <div class="grid3">Crypto Amount</div>
-      <div class="grid3"> Stage Number</div>
-      <div class="grid3">Payment Status</div>
+      <div class="grid3">Status</div>
 
     </div>
-    <div id="string" class="string">
-      <img id="img1" style="width:1px;position:absolute;margin-left:140px" src="./img/p1.png" alt="pixel">
-      <img id="img2" style="width:1px;position:absolute;margin-left:260px" src="./img/p1.png" alt="pixel">
-      <img id="img3" style="width:1px;position:absolute;margin-left:385px" src="./img/p1.png" alt="pixel">
-      <img id="img4" style="width:1px;position:absolute;margin-left:510px" src="./img/p1.png" alt="pixel">
-      <img id="img5" style="width:1px;position:absolute;margin-left:630px" src="./img/p1.png" alt="pixel">
-      <img id="img6" style="width:1px;position:absolute;margin-left:760px" src="./img/p1.png" alt="pixel">
-      <img id="img7" style="width:1px;position:absolute;margin-left:880px" src="./img/p1.png" alt="pixel">
+  <div  id="string" class="string">
+      <img id="img1" style="width:1px;position:absolute;margin-left:130px" src="./img/p1.png" alt="pixel">
+      <img id="img2" style="width:1px;position:absolute;margin-left:300px" src="./img/p1.png" alt="pixel">
+      <img id="img3" style="width:1px;position:absolute;margin-left:425px" src="./img/p1.png" alt="pixel">
+      <img id="img4" style="width:1px;position:absolute;margin-left:590px" src="./img/p1.png" alt="pixel">
+      <img id="img5" style="width:1px;position:absolute;margin-left:730px" src="./img/p1.png" alt="pixel">
+      <img id="img6" style="width:1px;position:absolute;margin-left:850px" src="./img/p1.png" alt="pixel">
+
     </div>
   </div>
 
-
+<button id="mkarec" type="button" name="button" onclick="log()">make a record</button>
 
   <!-- The Modal -->
   <div id="myModal" class="modal">
@@ -318,7 +314,7 @@ You can take back your investments variable</span>
           Decimals of Precision <br>
           <input id="pop_up_window_decimal" type="text" name="" value="18"><br>
           <div class="copy">
-            <p>Copy this address to your wallet to view your token.
+            <p>Copy this address to your wallet to view your KAK token.
             Do not send funds to this addres.</p>
           </div>
         </div>
@@ -328,17 +324,7 @@ You can take back your investments variable</span>
 
   </div>
 
-  <div>
-    <div>
-      <br /><br /> Your account address (use a test account) from which to interact with the contract:<br />
-      <input id='fromAddress' placeholder='from address' size='50'>
 
-      <br /><br /> Enter an integer (uint) and press the button.<br /> This will execute the contract method.<br />
-      <input id='valStore' placeholder='value'><button id="valStoreBtn" onclick="tes()">store</button>
-
-      <br /><br />
-    </div>
-  </div>
 <script type="text/javascript" src="./js/modal.js" ></script>
   <script type="text/javascript">
     // Popup window code
@@ -354,7 +340,7 @@ You can take back your investments variable</span>
   <script type="text/javascript">
     // this function copy wallet address
     function copyClip() {
-      var copyText = document.getElementById('inpaymentadd');
+      var copyText = document.getElementById('paymentaddr');
       copyText.select();
       document.execCommand("copy");
     }
