@@ -171,7 +171,7 @@ transition: 0.6s ease-in-out;
 display: flex;
 }
 
-#myetherwallet, #metamask {
+.myetherwallet, .metamask {
 
   /* border-radius: 5px; */
   /*border-right: 23px;
@@ -192,11 +192,19 @@ display: flex;
             background-color: #00BEA3;
 }
 
-#myetherwallet{
+.myetherwallet{
   margin-right: 230px;
 }
-#metamask{
+.metamask{
   margin-right:120px;
+}
+.metamask[disabled]{
+  background-color: rgb(204,204,204);
+  color:#737277
+
+}
+.metamask[disabled]:hover{
+  cursor: not-allowed;
 }
 /* #myetherwallet:hover, #metamask:hover { //button animation
 

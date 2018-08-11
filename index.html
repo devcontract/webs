@@ -179,11 +179,13 @@
 
     <div class="button">
 
-      <a id="myetherwallet" type="button" href="https://www.myetherwallet.com/#send-transaction" target="_blank" name="myetherwallet">BUY WITH MYETHERWALLET</a>
-      <a id="metamask" type="button" name="metamask" onclick="bayMetamask()">BUY WITH METAMASK</a>
+      <a class="myetherwallet" id="buy_myetherwallet" type="button" href="https://www.myetherwallet.com/#send-transaction" target="_blank" name="myetherwallet">BUY WITH MYETHERWALLET</a>
+      <a class="metamask" id="buy_metamask" type="button" name="metamask" onclick="bayMetamask()"  >BUY WITH METAMASK</a>
 
     </div>
   </div>
+
+
 
   <div style="margin-top:5px; height:500px" class="block">
 
@@ -219,8 +221,8 @@
       <p>Add this KAK Token address to your Wallet to see Your Tokens <i id="myBtn" style="font-size:18px; color:#00BEA3" class="fa">&#xf05a;</i></p>
     </div>
     <div class="button">
-      <a id="myetherwallet" type="button" href="https://www.myetherwallet.com/#send-transaction" target="_blank" name="myetherwallet">WITHDRAWAL WITH MYETHERWALLET</a>
-      <a id="metamask" type="button" name="metamask" onclick="withdrawToken()">WITHDRAWAL WITH METAMASK</a>
+      <a class="myetherwallet" id="withdraw_myetherwallet" type="button" href="https://www.myetherwallet.com/#send-transaction" target="_blank" name="myetherwallet">WITHDRAWAL WITH MYETHERWALLET</a>
+      <a class="metamask" id="withdraw_metamask" type="button" name="metamask" onclick="withdrawToken()">WITHDRAWAL WITH METAMASK</a>
       <!-- if needed please change above buttons id-->
       <!--<a href="./pur_tok.html" name="button" id="myetherwallet2">MYETHERWALLET</a>
       <a href="./pur_tok.html" name="button" id="metamask2">METAMASK</a>-->
@@ -258,8 +260,8 @@ You can take back your investments</span>
 
 
     <div class="button">
-      <a id="myetherwallet" type="button" href="https://www.myetherwallet.com/#send-transaction" target="_blank" name="myetherwallet">REFUND WITH MYETHERWALLET</a>
-      <a id="metamask" type="button" name="metamask" onclick="refundEther()">REFUND WITH METAMASK</a>
+      <a class="myetherwallet" id="refund_myetherwallet" type="button" href="https://www.myetherwallet.com/#send-transaction" target="_blank" name="myetherwallet">REFUND WITH MYETHERWALLET</a>
+      <a class="metamask" id="refund_metamask" type="button" name="metamask" onclick="refundEther()">REFUND WITH METAMASK</a>
 
       <!--  <a href="./pur_tok.html" name="button" id="myetherwallet">MYETHERWALLET</a>
         <a href="./pur_tok.html" name="button" id="metamask">METAMASK</a>-->
@@ -337,6 +339,9 @@ You can take back your investments</span>
   <script type="text/javascript" src="./js/index.js" async></script>
 
   <script type="text/javascript" src="./js/web3.min.js"></script>
+<script type="text/javascript" src="./js/button_disable_enable.js">
+
+</script>
   <script type="text/javascript">
     // this function copy wallet address
     function copyClip() {
