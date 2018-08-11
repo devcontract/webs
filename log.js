@@ -6,11 +6,16 @@ var txHref = "https://etherscan.io";
 
 function log(){
    showLog();
-   line();
+  // line();
+   clear();
 }
 
 function  showLog(){
+var base = document.getElementById('stringbase');
      createBase();
+     while (base.hasChildNodes()) {
+        base.removeChild(base.firstChild);
+    }
      createDiv(rand());
      createDiv(new Date().toDateString("yyyy/MM/dd"));
      createButton("refund", "green");
@@ -58,7 +63,10 @@ function createBase(){
    div.id = 'stringbase';
    div.setAttribute('class', 'grid2');
    document.getElementById('string').appendChild(div);
+
 }
+
+
 
 function line(){
    i = i + 40;
