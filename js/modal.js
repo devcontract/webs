@@ -22,5 +22,3 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
-
-document.getElementById('pop_up_window_input').value = document.getElementById('inpaymentadd').value;
