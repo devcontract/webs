@@ -1,5 +1,5 @@
 
-.allowed_button{
+.allowed_myetherwallet{
 
   /* border-radius: 5px; */
   /*border-right: 23px;
@@ -18,9 +18,10 @@
   margin-top: 40px;
   width: 270px;
   background-color: #00BEA3;
+  margin-right: 230px;
 }
 
-.non_allowed_button{
+.non_allowed_myetherwallet{
 
   /* border-radius: 5px; */
   /*border-right: 23px;
@@ -39,4 +40,54 @@
   margin-top: 40px;
   width: 270px;
   backgroundColor:"#cccccc";
+  margin-right: 230px;
 }
+
+
+.allowed_metamask{
+
+  /* border-radius: 5px; */
+  /*border-right: 23px;
+  border-left: 23px;*/
+  height: 30px;
+  border: none;
+  margin-top: 50px;
+  display: inline-block;
+  font-size: 13px;
+  cursor: allowed;
+  padding-top: 15px;
+  text-decoration: none;
+  border: 1px solid white;
+  color: white;
+  text-align: center;
+  margin-top: 40px;
+  width: 270px;
+  background-color: #00BEA3;
+  margin-right: 120px;
+}
+
+.non_allowed_metamask{
+
+  /* border-radius: 5px; */
+  /*border-right: 23px;
+  border-left: 23px;*/
+  height: 30px;
+  border: none;
+  margin-top: 50px;
+  display: inline-block;
+  font-size: 13px;
+  cursor: not-allowed;
+  padding-top: 15px;
+  text-decoration: none;
+  border: 1px solid white;
+  color:"#737277";
+  text-align: center;
+  margin-top: 40px;
+  width: 270px;
+  backgroundColor:"#cccccc";
+  margin-right: 120px;
+}
+
+
+
+
