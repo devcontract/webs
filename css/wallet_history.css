@@ -39,14 +39,14 @@ tbody{
 
 .grid2 {
 padding-top: 10px;
-margin-left: 40px;
+margin-left: 5px;
 display:inline-grid ;
-width: 100px;
+width: 10px;
 height: 30px;
 text-align: center;
 word-break: break-all;
 word-wrap: break-word;
-font-size: 13px;
+font-size: 10px;
 }
 
 .grid3 {
