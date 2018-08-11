@@ -1,0 +1,42 @@
+
+.allowed_button{
+
+  /* border-radius: 5px; */
+  /*border-right: 23px;
+  border-left: 23px;*/
+  height: 30px;
+  border: none;
+  margin-top: 50px;
+  display: inline-block;
+  font-size: 13px;
+  cursor: allowed;
+  padding-top: 15px;
+  text-decoration: none;
+  border: 1px solid white;
+  color: white;
+  text-align: center;
+  margin-top: 40px;
+  width: 270px;
+  background-color: #00BEA3;
+}
+
+.non_allowed_button{
+
+  /* border-radius: 5px; */
+  /*border-right: 23px;
+  border-left: 23px;*/
+  height: 30px;
+  border: none;
+  margin-top: 50px;
+  display: inline-block;
+  font-size: 13px;
+  cursor: not-allowed;
+  padding-top: 15px;
+  text-decoration: none;
+  border: 1px solid white;
+  color:"#737277";
+  text-align: center;
+  margin-top: 40px;
+  width: 270px;
+  backgroundColor:"#cccccc";
+}
