@@ -198,14 +198,8 @@ display: flex;
 .metamask{
   margin-right:120px;
 }
-.metamask[disabled]{
-  background-color: rgb(204,204,204);
-  color:#737277
 
-}
-.metamask[disabled]:hover{
-  cursor: not-allowed;
-}
+
 /* #myetherwallet:hover, #metamask:hover { //button animation
 
   color: white;

@@ -7,7 +7,7 @@ var txHref = "https://etherscan.io";
 function log(){
    showLog();
   // line();
- 
+
 }
 
 function  showLog(){
