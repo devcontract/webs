@@ -180,7 +180,7 @@
     <div class="button">
 
       <a class="non_allowed_myetherwallet" id="buy_myetherwallet" type="button" href="https://www.myetherwallet.com/#send-transaction" target="_blank" name="myetherwallets">BUY WITH MYETHERWALLET</a>
-      <a class="non_allowed_metamask" id="buy_metamask" type="button" name="metamasks" onclick="bayMetamask()"  >BUY WITH METAMASK</a>
+      <a class="non_allowed_metamask" id="buy_metamask" type="button" name="metamasks" onclick="bayMetamask()" href="">BUY WITH METAMASK</a>
 
     </div>
   </div>
@@ -191,7 +191,7 @@
 
     <br>
     <div class="reachedwindow" style="height:30px">
-    <span id="softcap_reached_token_withdrawal" class="softcr">Softcap is reached you can now withdraw</span>
+      <span id="softcap_reached_token_withdrawal" class="softcr">Softcap is reached you can now withdraw</span>
     </div>
     <div class="tokenvalue">
 
@@ -222,7 +222,7 @@
     </div>
     <div class="button">
       <a class="non_allowed_myetherwallet" id="withdraw_myetherwallet" type="button" href="https://www.myetherwallet.com/#send-transaction" target="_blank" name="myetherwallet">WITHDRAWAL WITH MYETHERWALLET</a>
-      <a class="non_allowed_metamask" id="withdraw_metamask" type="button" name="metamask" onclick="withdrawToken()">WITHDRAWAL WITH METAMASK</a>
+      <a class="non_allowed_metamask" id="withdraw_metamask" type="button" name="metamask" onclick="withdrawToken()" href="">WITHDRAWAL WITH METAMASK</a>
       <!-- if needed please change above buttons id-->
       <!--<a href="./pur_tok.html" name="button" id="myetherwallet2">MYETHERWALLET</a>
       <a href="./pur_tok.html" name="button" id="metamask2">METAMASK</a>-->
@@ -231,7 +231,7 @@
 
   <div style="margin-top:5px; height:450px; padding-top:15px;" class="block">
     <div class="reachedwindow" style="height:30px">
-    <span id="softcap_reached_eth_refund" class="softcr">Unfortunately Softcap has not been reached .
+      <span id="softcap_reached_eth_refund" class="softcr">Unfortunately Softcap has not been reached .
 You can take back your investments</span>
     </div>
 
@@ -261,7 +261,7 @@ You can take back your investments</span>
 
     <div class="button">
       <a class="non_allowed_myetherwallet" id="refund_myetherwallet" type="button" href="https://www.myetherwallet.com/#send-transaction" target="_blank" name="myetherwallet">REFUND WITH MYETHERWALLET</a>
-      <a class="non_allowed_metamask" id="refund_metamask" type="button" name="metamask" onclick="refundEther()">REFUND WITH METAMASK</a>
+      <a class="non_allowed_metamask" id="refund_metamask" type="button" name="metamask" onclick="refundEther()" href="">REFUND WITH METAMASK</a>
 
       <!--  <a href="./pur_tok.html" name="button" id="myetherwallet">MYETHERWALLET</a>
         <a href="./pur_tok.html" name="button" id="metamask">METAMASK</a>-->
@@ -275,91 +275,113 @@ You can take back your investments</span>
   <!--Transaction history Log BLock-->
 
   <div style="height:100%" class="block">
-<h2>Transaction history</h2>
+    <div style="text-align:center;">
+      <h2>Transaction history</h2>
+    </div>
+
+
+    <div class="attributes">
+
+      <div style="left:135px" class="grid3 title">#</div>
+      <div style="left:240px" class="grid3 title">TimeStamp</div>
+      <div style="left:540px" class="grid3 title">TxHash</div>
+      <div style="left:805px;width:120px;" class="grid3 title">Block Number</div>
+      <div style="left:925px" class="grid3 title">Value</div>
+      <div style="left:1070px" class="grid3 title">Status</div>
+
+    </div>
+    <div id="string_transaction_history" class="string">
+    </div>
+  </div>
+  <div style="width:100px;height:100%;position:static;float:left;border:1px solid black;" class="">
+    <button id="mkarec" type="button" name="button" onclick="log()">make a transaction record</button>
+    <button id="mkarec" type="button" name="button" onclick="log()">make a Purchase record</button>
+    <button id="mkarec" type="button" name="button" onclick="log()">make a Refund record</button>
+    <button id="mkarec" type="button" name="button" onclick="log()">make a Withdraw record</button>
+    <button id="mkarec" type="button" name="button" onclick="log()">make a Change record</button>
+  </div>
+
+
+  <!--purchase history Log BLock-->
+  <div style="height:100%" class="block">
+    <div style="text-align:center;">
+      <h2>Purchase history</h2>
+    </div>
+
 
     <div class="attributes">
 
       <div class="grid3">#</div>
       <div class="grid3">TimeStamp</div>
       <div class="grid3">TxHash</div>
-      <div class="grid3">BlockNumber</div>
-      <div class="grid3">Value</div>
-      <div class="grid3">Status</div>
+      <div class="grid3">Gas Price</div>
+      <div class="grid3">Gas Used</div>
+      <div class="grid3">ETH Amount</div>
+      <div class="grid3">Token Amount</div>
 
     </div>
-    <div  id="string" class="string">
+    <div id="string_purchase_history" class="string">
     </div>
   </div>
-<div style="width:100px;height:200px;position:static;float:left;border:1px solid black;" class="">
-  <button id="mkarec" type="button" name="button" onclick="log()">make a record</button>
-</div>
+  <!--Refund history Log BLock-->
+
+  <div style="height:100%" class="block">
+    <div style="text-align:center;">
+      <h2>Refund history</h2>
+    </div>
 
 
-<!--purchase history Log BLock-->
-<div style="height:100%" class="block">
-<h2>Purchase history</h2>
+    <div class="attributes">
 
-  <div class="attributes">
+      <div class="grid3">#</div>
+      <div class="grid3">TimeStamp</div>
+      <div class="grid3">TxHash</div>
+      <div class="grid3">Gas Price</div>
+      <div class="grid3">Gas Used</div>
+      <div class="grid3">ETH Amount</div>
 
-    <div class="grid3">#</div>
-    <div class="grid3">TimeStamp</div>
-    <div class="grid3">TxHash</div>
-    <div class="grid3">Gas Price</div>
-    <div class="grid3">Gas Used</div>
-    <div class="grid3">ETH Amount</div>
-    <div class="grid3">Token Amount</div>
-
+    </div>
+    <div id="string_reund_history" class="string">
+    </div>
   </div>
+  <!--withdraw history Log BLock-->
+  <div style="height:100%" class="block">
+    <div style="text-align:center;">
+      <h2>Withdraw history</h2>
+    </div>
 
-</div>
-<!--Refund history Log BLock-->
-<div style="height:100%" class="block">
-<h2>Refund history</h2>
 
-  <div class="attributes">
+    <div class="attributes">
 
-    <div class="grid3">#</div>
-    <div class="grid3">TimeStamp</div>
-    <div class="grid3">TxHash</div>
-    <div class="grid3">Gas Price</div>
-    <div class="grid3">Gas Used</div>
-    <div class="grid3">ETH Amount</div>
+      <div class="grid3">#</div>
+      <div class="grid3">TimeStamp</div>
+      <div class="grid3">TxHash</div>
+      <div class="grid3">Gas Price</div>
+      <div class="grid3">Gas Used</div>
+      <div class="grid3">Token Amount</div>
 
+    </div>
+    <div id="string_withdraw_history" class="string">
+    </div>
   </div>
+  <!--Change history Log BLock-->
+  <div style="height:100%" class="block">
+    <div style="text-align:center;">
+      <h2>Change history</h2>
+    </div>
 
-</div>
-<!--withdraw history Log BLock-->
-<div style="height:100%" class="block">
-<h2>Withdraw history</h2>
 
-  <div class="attributes">
+    <div class="attributes">
 
-    <div class="grid3">#</div>
-    <div class="grid3">TimeStamp</div>
-    <div class="grid3">TxHash</div>
-    <div class="grid3">Gas Price</div>
-    <div class="grid3">Gas Used</div>
-    <div class="grid3">Token Amount</div>
-
+      <div class="grid3">#</div>
+      <div class="grid3">TimeStamp</div>
+      <div class="grid3">TxHash</div>
+      <div class="grid3">Taken ETH</div>
+      <div class="grid3">Returned ETH</div>
+    </div>
+    <div id="string_change_history" class="string">
+    </div>
   </div>
-
-</div>
-<!--Change history Log BLock-->
-<div style="height:100%" class="block">
-<h2>Change history</h2>
-
-  <div class="attributes">
-
-    <div class="grid3">#</div>
-    <div class="grid3">TimeStamp</div>
-    <div class="grid3">TxHash</div>
-    <div class="grid3">Used ETH</div>
-    <div class="grid3">Returned ETH</div>
-   
-
-  </div>
-
-</div>
 
   <!-- The Modal -->
   <div id="myModal" class="modal">
@@ -370,16 +392,13 @@ You can take back your investments</span>
       <div class="pop_up_container">
         <div class="addwind">
           <span class="close">&times;</span>
-        <span style="font-weight:bold;">Token Contract address</span>
+          <span style="font-weight:bold;">Token Contract address</span>
 
-           <input id="pop_up_window_input" type="text" name="" value=""> <br>
-          Token Symbol <br>
-          <input id="pop_up_window_token_name" type="text" name="" value=""><br>
-          Decimals of Precision <br>
+          <input id="pop_up_window_input" type="text" name="" value=""> <br> Token Symbol <br>
+          <input id="pop_up_window_token_name" type="text" name="" value=""><br> Decimals of Precision <br>
           <input id="pop_up_window_decimal" type="text" name="" value="18"><br>
           <div class="copy">
-            <p>Copy this address to your wallet to view your KAK token.
-            Do not send funds to this addres.</p>
+            <p>Copy this address to your wallet to view your KAK token. Do not send funds to this addres.</p>
           </div>
         </div>
 
@@ -389,21 +408,20 @@ You can take back your investments</span>
   </div>
 
 
-<script type="text/javascript" src="./js/modal.js" ></script>
+  <script type="text/javascript" src="./js/modal.js"></script>
   <script type="text/javascript">
     // Popup window code
     function newPopup(url) {
-    popupWindow = window.open(
-      url,'popUpWindow','height=300,width=400,left=200,top=200,resizable=no,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
+      popupWindow = window.open(
+        url, 'popUpWindow', 'height=300,width=400,left=200,top=200,resizable=no,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
     }
   </script>
 
   <script type="text/javascript" src="./js/index.js" async></script>
 
   <script type="text/javascript" src="./js/web3.min.js"></script>
- <script type="text/javascript" src="./js/button_disable_enable.js"> 
-
-</script>
+  <script type="text/javascript" src="./js/button_disable_enable.js">
+  </script>
   <script type="text/javascript">
     // this function copy wallet address
     function copyClip() {

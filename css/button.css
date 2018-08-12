@@ -9,7 +9,6 @@
   margin-top: 50px;
   display: inline-block;
   font-size: 13px;
-  cursor: allowed;
   padding-top: 15px;
   text-decoration: none;
   border: 1px solid white;
@@ -39,8 +38,9 @@
   text-align: center;
   margin-top: 40px;
   width: 270px;
-  backgroundColor:"#cccccc";
+  background-color:#cccccc;
   margin-right: 230px;
+    color: #737277;
 }
 
 
@@ -64,6 +64,7 @@
   width: 270px;
   background-color: #00BEA3;
   margin-right: 120px;
+
 }
 
 .non_allowed_metamask{
@@ -84,10 +85,7 @@
   text-align: center;
   margin-top: 40px;
   width: 270px;
-  backgroundColor:"#cccccc";
+  background-color:#cccccc;
   margin-right: 120px;
+  color: #737277;
 }
-
-
-
-

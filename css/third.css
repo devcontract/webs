@@ -175,16 +175,3 @@ input {
 #buy_button:hover {
   box-shadow: 2px 2px 4px #00BEA3;
 }
-
-
-button {
-  -webkit-transition-duration: 0.6s;
-  /* Safari */
-  transition-duration: 0.6s;
-}
-
-button:hover {
-  background-color: #34f6e5;
-  /* rose */
-  color: white;
-}

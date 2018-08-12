@@ -211,16 +211,3 @@ display: flex;
   transition: 0.5s;
   box-shadow: 2px 2px 10px black;
 }*/
-
-
-
-
-button {
-    -webkit-transition-duration: 0.6s; /* Safari */
-    transition-duration: 0.6s;
-}
-
-button:hover {
-    background-color: #34f6e5; /* rose */
-    color: white;
-}

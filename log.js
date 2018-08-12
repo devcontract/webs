@@ -3,20 +3,18 @@ var txHref = "https://etherscan.io";
 
 function log(){
    showLog();
- 
-
 }
 
 function  showLog(){
  for (var i = 1; i <= 4; i++) {
      createBase();
      createDiv(i, 20);
-     createDiv("09/07/2018, 06:10:46", 150);
-     createDiv("0x2525821be8215769dd61fc7d25b83fefede62efbcf4a7edac271a87c44e03003", 420);
-     createDiv("2602384", 50);
-     createDiv("2.123456789123457", 150);
-     createButton(txHref, "Fail", "red", 150);
-     
+     createDiv("09/07/2018, 06:10:46", 150, 20);
+     createDiv("0x2525821be8215769dd61fc7d25b83fefede62efbcf4a7edac271a87c44e03003", 420, 20);
+     createDiv("2602384", 50, 30);
+     createDiv("2.123456789123457", 150, 20);
+     createButton(txHref, "Fail", "red", 90);
+
      createReturn();
  }
 }
@@ -29,7 +27,6 @@ function createButton(txHref, data, color, elemWidth){
    var a = document.createElement("a");
    a.innerHTML = data +  "<br><br>";
    a.style.color = color;
-   a.style.height = "100%";
    a.style.cursor = "pointer";
    a.style.backgroundColor = color;
    a.style.border = 'none';
@@ -37,6 +34,7 @@ function createButton(txHref, data, color, elemWidth){
    a.style.color = "white";
    a.style.height = "30px";
    a.style.paddingTop = "4px";
+   a.style.marginLeft ="20px";
    a.style.textShadow = '2px 2px black';
    a.setAttribute('class', 'grid2');
    a.style.width = elemWidth + "px";
@@ -45,12 +43,13 @@ function createButton(txHref, data, color, elemWidth){
    document.getElementById('stringbase').appendChild(a);
 }
 
-function createDiv(data, elemWidth){
+function createDiv(data, elemWidth ,marginLeft){
    var div = document.createElement("div");
    div.innerHTML = data;
    div.style.color = 'black';
    div.setAttribute('class', "grid2");
    div.style.width=elemWidth + "px";
+   div.style.marginLeft = marginLeft + "px";
    document.getElementById('stringbase').appendChild(div);
 }
 
@@ -65,5 +64,5 @@ function createBase(){
    div.style.color = 'black';
    div.id = 'stringbase';
    div.setAttribute('class', 'grid2');
-   document.getElementById('string').appendChild(div);
+   document.getElementById('string_transaction_history').appendChild(div);
 }
