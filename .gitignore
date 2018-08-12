@@ -6,6 +6,8 @@
 .DS_Store
 .AppleDouble
 .LSOverride
+.php
+.gitignore
 
 # Icon must end with two \r
 Icon
