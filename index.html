@@ -16,11 +16,18 @@
 <link rel="stylesheet" href="./css/third.css">
 <link rel="stylesheet" href="./css/pur_tok.css">
 <link rel="stylesheet" href="./css/tok_withdrawal.css">
-<link rel="stylesheet" href="./css/wallet_history.css">
 <link rel="stylesheet" href="./css/modal.css">
 <link rel="stylesheet" href="./css/pop_up_window.css">
 <link rel="stylesheet" href="./css/button.css">
-<script type="text/javascript" src="./log.js"></script>
+<link rel="stylesheet" href="./css/tran_hist.css">
+<link rel="stylesheet" href="./css/pur_hist.css">
+<link rel="stylesheet" href="./css/ref_hist.css">
+<link rel="stylesheet" href="./css/with_hist.css">
+<link rel="stylesheet" href="./css/chan_hist.css">
+
+
+<script type="text/javascript" src="./js/tran_hist.js"></script>
+<script type="text/javascript" src="./js/pur_hist.js"></script>
 
 <body>
 
@@ -99,33 +106,6 @@
 
 
   </div>
-  <!-- end of the last BLock withkak tokens per eth-->
-
-  <!--Last Block with calculator
-  <div style="min-height: 100px;max-height: 400px;border-bottom-left-radius: 18px;  border-bottom-right-radius: 18px;" class="block ">
-    <div class="last_block">
-      <div id="digit_display">
-        <div style="margin-top:-20px;margin-bottom:20px" class="">
-          <a>SUM ETH  <i id="minVal" style="font-size:18px; color:#34f6e5" class="fa" title="minimum amount : 0.005 ETH">&#xf05a;</i></a> <br>
-        </div>
-        <input id="input_valueb" style="text-align:right" type="text" maxlength="21" value="1">
-
-        <span class="span_string">=</span>
-        <span class="span_string" id="token_calcb"> </span>
-        <a href="./pur_tok.html" name="button" id="buy_button">BUY</a>
-      </div>
-    </div>
-  </div>
-  Last Block with calculator-->
-
-
-
-
-
-
-
-
-  <!-- side nav bar -->
 
   <div class="pur_tok">
     <div class="purdet">
@@ -134,10 +114,7 @@
 
     <!-- price stage conifg -->
 
-
-
     <div class="last_block">
-
 
       <div id="digit_display">
         <div class="">
@@ -270,7 +247,13 @@ You can take back your investments</span>
 
   </div>
 
-
+  <div style="width:100px;height:100%;position:static;float:left;border:1px solid black;" class="">
+    <button id="mkarec1" type="button" name="button" onclick="logTranHist()">make a transaction record</button>
+    <button id="mkarec2" type="button" name="button" onclick="logPurHist()">make a Purchase record</button>
+    <button id="mkarec3" type="button" name="button" onclick="log()">make a Refund record</button>
+    <button id="mkarec4" type="button" name="button" onclick="log()">make a Withdraw record</button>
+    <button id="mkarec5" type="button" name="button" onclick="log()">make a Change record</button>
+  </div>
 
   <!--Transaction history Log BLock-->
 
@@ -280,25 +263,18 @@ You can take back your investments</span>
     </div>
 
 
-    <div class="attributes">
+    <div class="tran_hist_attributes">
 
-      <div style="left:135px" class="grid3 title">#</div>
-      <div style="left:240px" class="grid3 title">TimeStamp</div>
-      <div style="left:540px" class="grid3 title">TxHash</div>
-      <div style="left:805px;width:120px;" class="grid3 title">Block Number</div>
-      <div style="left:925px" class="grid3 title">Value</div>
-      <div style="left:1070px" class="grid3 title">Status</div>
+      <div style="left:135px" class="tran_hist_grid3 tran_hist_title">#</div>
+      <div style="left:240px" class="tran_hist_grid3 tran_hist_title">TimeStamp</div>
+      <div style="left:540px" class="tran_hist_grid3 tran_hist_title">TxHash</div>
+      <div style="left:805px; width:120px;" class="tran_hist_grid3 tran_hist_title">Block Number</div>
+      <div style="left:925px" class="tran_hist_grid3 tran_hist_title">Value</div>
+      <div style="left:1070px" class="tran_hist_grid3 tran_hist_title">Status</div>
 
     </div>
-    <div id="string_transaction_history" class="string">
+    <div id="tran_hist_string" class="tran_hist_string">
     </div>
-  </div>
-  <div style="width:100px;height:100%;position:static;float:left;border:1px solid black;" class="">
-    <button id="mkarec" type="button" name="button" onclick="log()">make a transaction record</button>
-    <button id="mkarec" type="button" name="button" onclick="log()">make a Purchase record</button>
-    <button id="mkarec" type="button" name="button" onclick="log()">make a Refund record</button>
-    <button id="mkarec" type="button" name="button" onclick="log()">make a Withdraw record</button>
-    <button id="mkarec" type="button" name="button" onclick="log()">make a Change record</button>
   </div>
 
 
@@ -309,18 +285,18 @@ You can take back your investments</span>
     </div>
 
 
-    <div class="attributes">
+    <div class="pur_hist_attributes">
 
-      <div class="grid3">#</div>
-      <div class="grid3">TimeStamp</div>
-      <div class="grid3">TxHash</div>
-      <div class="grid3">Gas Price</div>
-      <div class="grid3">Gas Used</div>
-      <div class="grid3">ETH Amount</div>
-      <div class="grid3">Token Amount</div>
+      <div class="pur_hist_grid3">#</div>
+      <div class="pur_hist_grid3">TimeStamp</div>
+      <div class="pur_hist_grid3">TxHash</div>
+      <div class="pur_hist_grid3">Gas Price</div>
+      <div class="pur_hist_grid3">Gas Used</div>
+      <div class="pur_hist_grid3">ETH Amount</div>
+      <div class="pur_hist_grid3">Token Amount</div>
 
     </div>
-    <div id="string_purchase_history" class="string">
+    <div id="pur_hist_string" class="pur_hist_string">
     </div>
   </div>
   <!--Refund history Log BLock-->
@@ -331,17 +307,17 @@ You can take back your investments</span>
     </div>
 
 
-    <div class="attributes">
+    <div class="ref_hist_attributes">
 
-      <div class="grid3">#</div>
-      <div class="grid3">TimeStamp</div>
-      <div class="grid3">TxHash</div>
-      <div class="grid3">Gas Price</div>
-      <div class="grid3">Gas Used</div>
-      <div class="grid3">ETH Amount</div>
+      <div class="ref_hist_grid3">#</div>
+      <div class="ref_hist_grid3">TimeStamp</div>
+      <div class="ref_hist_grid3">TxHash</div>
+      <div class="ref_hist_grid3">Gas Price</div>
+      <div class="ref_hist_grid3">Gas Used</div>
+      <div class="ref_hist_grid3">ETH Amount</div>
 
     </div>
-    <div id="string_reund_history" class="string">
+    <div id="ref_hist_string" class="string">
     </div>
   </div>
   <!--withdraw history Log BLock-->
@@ -351,17 +327,17 @@ You can take back your investments</span>
     </div>
 
 
-    <div class="attributes">
+    <div class="with_hist_attributes">
 
-      <div class="grid3">#</div>
-      <div class="grid3">TimeStamp</div>
-      <div class="grid3">TxHash</div>
-      <div class="grid3">Gas Price</div>
-      <div class="grid3">Gas Used</div>
-      <div class="grid3">Token Amount</div>
+      <div class="with_hist_grid3">#</div>
+      <div class="with_hist_grid3">TimeStamp</div>
+      <div class="with_hist_grid3">TxHash</div>
+      <div class="with_hist_grid3">Gas Price</div>
+      <div class="with_hist_grid3">Gas Used</div>
+      <div class="with_hist_grid3">Token Amount</div>
 
     </div>
-    <div id="string_withdraw_history" class="string">
+    <div id="with_hist_string" class="string">
     </div>
   </div>
   <!--Change history Log BLock-->
@@ -371,15 +347,15 @@ You can take back your investments</span>
     </div>
 
 
-    <div class="attributes">
+    <div class="chan_hist_attributes">
 
-      <div class="grid3">#</div>
-      <div class="grid3">TimeStamp</div>
-      <div class="grid3">TxHash</div>
-      <div class="grid3">Taken ETH</div>
-      <div class="grid3">Returned ETH</div>
+      <div class="chan_hist_grid3">#</div>
+      <div class="chan_hist_grid3">TimeStamp</div>
+      <div class="chan_hist_grid3">TxHash</div>
+      <div class="chan_hist_grid3">Taken ETH</div>
+      <div class="chan_hist_grid3">Returned ETH</div>
     </div>
-    <div id="string_change_history" class="string">
+    <div id="chan_hist_string" class="string">
     </div>
   </div>
 

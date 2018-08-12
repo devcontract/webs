@@ -171,33 +171,7 @@ transition: 0.6s ease-in-out;
 display: flex;
 }
 
-.myetherwallet, .metamask {
 
-  /* border-radius: 5px; */
-  /*border-right: 23px;
-  border-left: 23px;*/
-  height: 30px;
-  border: none;
-  margin-top: 50px;
-  display: inline-block;
-  font-size: 13px;
-  cursor: pointer;
-  padding-top: 15px;
-  text-decoration: none;
-    border: 1px solid white;
-      color: white;
-        text-align: center;
-          margin-top: 40px;
-            width: 270px;
-            background-color: #00BEA3;
-}
-
-.myetherwallet{
-  margin-right: 230px;
-}
-.metamask{
-  margin-right:120px;
-}
 
 
 /* #myetherwallet:hover, #metamask:hover { //button animation

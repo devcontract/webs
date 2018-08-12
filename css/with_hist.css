@@ -1,0 +1,52 @@
+.with_hist_attributes{
+  margin:0 auto;
+  width: 1010px;
+  margin-left: 30px;
+  padding-bottom: 80px;
+}
+.with_hist_grid3 {
+margin-top: 15px;
+margin-left: 25px;
+display:inline-grid ;
+width: 110px;
+height: 15px;
+text-align: center;
+
+word-wrap: break-word;
+color: black;
+font-size: 15px;
+font-weight: bold;
+font-family: monospace;
+}
+.with_hist_title{
+  position: absolute;
+}
+
+
+#with_hist_stringbase{
+  width: 100%;
+  margin: auto;
+  display: inline;
+  padding-bottom: 20px;
+  font-size: 10px;
+}
+.with_hist_grid2 {
+padding-top: 10px;
+margin-left: 5px;
+display:inline-grid ;
+width: 10px;
+height: 30px;
+text-align: center;
+word-break: break-all;
+word-wrap: break-word;
+font-size: 10px;
+}
+
+#with_hist_colorfun{
+
+background-color: rgb(217, 162, 115);
+
+font-family:monospace;
+font-size: 13px;
+
+}
