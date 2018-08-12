@@ -30,5 +30,7 @@ Network Trash Folder
 Temporary Items
 .apdisk
 log copy.js
+.php
+.gitignore
 
 # End of https://www.gitignore.io/api/macos
