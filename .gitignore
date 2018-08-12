@@ -32,6 +32,6 @@ Temporary Items
 tt.js
 .php
 .gitignore
-
+!test.php
 
 # End of https://www.gitignore.io/api/macos
