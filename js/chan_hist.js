@@ -2,27 +2,27 @@
 var txHchan = "https://etherscan.io";
 
 function logChanHist(){
-   showLog();
+   showLogChan();
 }
 
-function  showLog(){
+function  showLogChan(){
  for (var i = 1; i <= 4; i++) {
-     createBase();
-     createDiv(i, 20, 15);
-     createDiv("09/07/2018, 06:10:46", 120, 15);
-     createDiv("0x2525821be8215769dd61fc7d25b83fefede62efbcf4a7edac271a87c44e03003", 400, 15);
-     createDiv("0.123323212", 50, 15);
-     
-     createDiv("99999999", 70, 15);
-     createReturn();
+     createBaseChan();
+     createDivChan(i, 20, 15);
+     createDivChan("09/07/2018, 06:10:46", 120, 15);
+     createDivChan("0x2525821be8215769dd61fc7d25b83fefede62efbcf4a7edac271a87c44e03003", 400, 15);
+     createDivChan("0.123323212", 50, 15);
+
+     createDivChan("99999999", 70, 15);
+     createReturnChan();
  }
 }
 
-function rand(){
+function randChan(){
    return Math.floor((Math.random() * 8995) + 10);
 }
 
-function createButton(txHref, data, color, elemWidth, marginLeft){
+function createButtonChan(txHref, data, color, elemWidth, marginLeft){
    var a = document.createElement("a");
    a.innerHTML = data +  "<br><br>";
    a.style.color = color;
@@ -42,7 +42,7 @@ function createButton(txHref, data, color, elemWidth, marginLeft){
    document.getElementById('chan_hist_stringbase').appendChild(a);
 }
 
-function createDiv(data, elemWidth ,marginLeft){
+function createDivChan(data, elemWidth ,marginLeft){
    var div = document.createElement("div");
    div.innerHTML = data;
    div.style.color = 'black';
@@ -53,12 +53,12 @@ function createDiv(data, elemWidth ,marginLeft){
    document.getElementById('chan_hist_stringbase').appendChild(div);
 }
 
-function createReturn(){
+function createReturnChan(){
    var newElem = document.createElement("BR");
    document.getElementById('chan_hist_stringbase').appendChild(newElem);
 }
 
-function createBase(){
+function createBaseChan(){
    var div = document.createElement("div");
    div.style.backgroundColor = "none";
    div.style.color = 'black';

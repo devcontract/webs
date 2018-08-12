@@ -2,28 +2,28 @@
 var txHref = "https://etherscan.io";
 
 function logPurHist(){
-   showLog();
+   showLogPur();
 }
 
-function  showLog(){
+function  showLogPur(){
  for (var i = 1; i <= 4; i++) {
-     createBase();
-     createDiv(i, 20, 15);
-     createDiv("09/07/2018, 06:10:46", 120, 15);
-     createDiv("0x2525821be8215769dd61fc7d25b83fefede62efbcf4a7edac271a87c44e03003", 400, 15);
-     createDiv("0.123323212", 50, 15);
-     createDiv("2.123456789123457", 150, 15);
-     createDiv("99999999", 70, 15);
-     createDiv("99999999", 70, 15);
-     createReturn();
+     createBasePur();
+     createDivPur(i, 20, 15);
+     createDivPur("09/07/2018, 06:10:46", 120, 15);
+     createDivPur("0x2525821be8215769dd61fc7d25b83fefede62efbcf4a7edac271a87c44e03003", 400, 15);
+     createDivPur("0.123323212", 50, 15);
+     createDivPur("2.123456789123457", 150, 15);
+     createDivPur("99999999", 70, 15);
+     createDivPur("99999999", 70, 15);
+     createReturnPur();
  }
 }
 
-function rand(){
+function randPur(){
    return Math.floor((Math.random() * 8995) + 10);
 }
 
-function createButton(txHref, data, color, elemWidth, marginLeft){
+function createButtonPur(txHref, data, color, elemWidth, marginLeft){
    var a = document.createElement("a");
    a.innerHTML = data +  "<br><br>";
    a.style.color = color;
@@ -43,23 +43,23 @@ function createButton(txHref, data, color, elemWidth, marginLeft){
    document.getElementById('pur_hist_stringbase').appendChild(a);
 }
 
-function createDiv(data, elemWidth ,marginLeft){
+function createDivPur(data, elemWidth ,marginLeft){
    var div = document.createElement("div");
    div.innerHTML = data;
    div.style.color = 'black';
    div.setAttribute('class', "pur_hist_grid2");
    div.style.width = elemWidth + "px";
    div.style.marginLeft = marginLeft + "px";
-   
+
    document.getElementById('pur_hist_stringbase').appendChild(div);
 }
 
-function createReturn(){
+function createReturnPur(){
    var newElem = document.createElement("BR");
    document.getElementById('pur_hist_stringbase').appendChild(newElem);
 }
 
-function createBase(){
+function createBasePur(){
    var div = document.createElement("div");
    div.style.backgroundColor = "none";
    div.style.color = 'black';

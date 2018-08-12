@@ -2,27 +2,27 @@
 var txHref = "https://etherscan.io";
 
 function logRefHist(){
-   showLog();
+   showLogRef();
 }
 
-function  showLog(){
+function  showLogRef(){
  for (var i = 1; i <= 4; i++) {
-     createBase();
-     createDiv(i, 20, 15);
-     createDiv("09/07/2018, 06:10:46", 120, 15);
-     createDiv("0x2525821be8215769dd61fc7d25b83fefede62efbcf4a7edac271a87c44e03003", 400, 15);
-     createDiv("0.123323212", 50, 15);
-     createDiv("2.123456789123457", 150, 15);
-     createDiv("99999999", 70, 15);
-     createReturn();
+     createBaseRef();
+     createDivRef(i, 20, 15);
+     createDivRef("09/07/2018, 06:10:46", 120, 15);
+     createDivRef("0x2525821be8215769dd61fc7d25b83fefede62efbcf4a7edac271a87c44e03003", 400, 15);
+     createDivRef("0.123323212", 50, 15);
+     createDivRef("2.123456789123457", 150, 15);
+     createDivRef("99999999", 70, 15);
+     createReturnRef();
  }
 }
 
-function rand(){
+function randRef(){
    return Math.floor((Math.random() * 8995) + 10);
 }
 
-function createButton(txHref, data, color, elemWidth, marginLeft){
+function createButtonRef(txHref, data, color, elemWidth, marginLeft){
    var a = document.createElement("a");
    a.innerHTML = data +  "<br><br>";
    a.style.color = color;
@@ -42,7 +42,7 @@ function createButton(txHref, data, color, elemWidth, marginLeft){
    document.getElementById('ref_hist_stringbase').appendChild(a);
 }
 
-function createDiv(data, elemWidth ,marginLeft){
+function createDivRef(data, elemWidth ,marginLeft){
    var div = document.createElement("div");
    div.innerHTML = data;
    div.style.color = 'black';
@@ -53,12 +53,12 @@ function createDiv(data, elemWidth ,marginLeft){
    document.getElementById('ref_hist_stringbase').appendChild(div);
 }
 
-function createReturn(){
+function createReturnRef(){
    var newElem = document.createElement("BR");
    document.getElementById('ref_hist_stringbase').appendChild(newElem);
 }
 
-function createBase(){
+function createBaseRef(){
    var div = document.createElement("div");
    div.style.backgroundColor = "none";
    div.style.color = 'black';
