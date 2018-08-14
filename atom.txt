@@ -1,3 +1,0 @@
-apm list --installed --bare > package-list.txt вывод в фаил
-apm list просто вывод
-https://gist.github.com/6b280ea99c69d662f847fd8befaa6a13.git
