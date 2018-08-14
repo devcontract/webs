@@ -1,0 +1,2 @@
+apm list --installed --bare > package-list.txt вывод в фаил
+apm list просто вывод 
