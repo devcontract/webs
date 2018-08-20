@@ -24,50 +24,6 @@ body {
   position: absolute;
 
 }
-#arrLeft{
-
-
-}
-#arrLeftsloj2{
-
-
-}
-
-#arrow{
-
-
-}
-#arrow_Sloj2{
-  position: relative;
-  bottom: 263px;
-  left: 255px;
-
-}
-
-#arrow2{
-
-
-}
-#arrow2_Sloj2{
-  position: relative;
-  bottom: 263px;
-  left: -54px;
-
-}
-
-
-
-
-#arrRight{
-
-
-}
-#arrRightSloj2{
-  position: relative;
-  bottom: 388px;
-  left: 502px;
-
-}
 
 
 .label {

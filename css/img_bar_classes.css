@@ -22,3 +22,26 @@ visibility: visible;
   bottom: 388px;
   left: 749px;
 }
+
+
+
+.current_stage1_bar_l2{
+  position: relative;
+  bottom: 138px;
+  left: -288px;
+}
+.current_stage2_bar_l2{
+  position: relative;
+  bottom: 263px;
+  left: 255px;
+}
+.current_stage3_bar_l2{
+  position: relative;
+  bottom: 263px;
+  left: 500px;
+}
+.current_finished_bar_l2{
+  position: relative;
+  bottom: 388px;
+  left: 502px;
+}
