@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-
+<link rel="stylesheet" href="./css/img_bar_classes.css">
 <link rel="stylesheet" href="./css/master.css">
 <link rel="stylesheet" href="./css/firstBlock.css">
 <link rel="stylesheet" href="./css/third.css">
@@ -26,11 +26,13 @@
 <link rel="stylesheet" href="./css/chan_hist.css">
 
 
+
 <script type="text/javascript" src="./js/tran_hist.js"></script>
 <script type="text/javascript" src="./js/pur_hist.js"></script>
 <script type="text/javascript" src="./js/ref_hist.js"></script>
 <script type="text/javascript" src="./js/with_hist.js"></script>
 <script type="text/javascript" src="./js/chan_hist.js"></script>
+<script type="text/javascript" src="./js/img_bar.js"></script>
 
 <body>
 
@@ -57,24 +59,29 @@
 
     </div>
   </div>
+  <button id="b1" style="position:absolute;left:20px;" type="button" name="button">b1</button>
+  <button id="b2" style="position:absolute;left:40px;" type="button" name="button">b2</button>
+  <button id="b3" style="position:absolute;left:70px;" type="button" name="button">b3</button>
+  <button id="b4" style="position:absolute;left:100px;" type="button" name="button">b4</button>
+  <button id="b5" style="position:absolute;left:130px;" type="button" name="button">b5</button>
+
   <div style="min-height: 210px;max-height: 1px;padding-top: 1px;border-top-left-radius: 18px; border-top-right-radius: 18px" class="block">
     <div class="img_bar">
       <img style="margin: 40px 0 0 9px;" id="back_ground" src="./img/bckgrnd_sprite.png" alt="">
       <div style="margin:12px 0 0 9px;" class="">
 
-
-        <img style="visibility:hidden" id="arrLeft" src="./img/arrows/arrLeft.png" alt="">
-        <img style="visibility:hidden" id="arrLeftsloj2" src="./img/arrows/arrLeftsloj2.png" alt="">
-        <img style="visibility:hidden" id="arrow" src="./img/arrows/arrow.png" alt="">
+        <img style="" id="arrLeft" src="./img/arrows/arrLeft.png" alt="">
+       <img style="visibility:hidden" id="arrLeftsloj2" src="./img/arrows/arrLeftsloj2.png" alt="">
+        <img style="" id="arrow" src="./img/arrows/arrow.png" alt="">
         <img style="visibility:hidden" id="arrow_Sloj2" src="./img/arrows/arrowsloj2.png" alt="">
         <img style="visibility:hidden" id="arrow2" src="./img/arrows/arrow.png" alt="">
         <img style="visibility:hidden" id="arrow2_Sloj2" src="./img/arrows/arrowsloj2.png" alt="">
-        <img style="visibility:hidden" id="arrRight" src="./img/arrows/arrRight.png" alt="">
-        <img style="visibility:hidden;" id="arrRightSloj2" src="./img/arrows/arrRightSloj2.png" alt="">
+        <img style="" id="arrRight" src="./img/arrows/arrRight.png" alt="">
+        <img style="visibility:hidden" id="arrRightSloj2" src="./img/arrows/arrRightSloj2.png" alt="">
       </div>
       <div class="label">
 
-        <div style="position:relative;left:70px;top:-10px;" class="stage">
+        <div style="position:absolute;left:70px;top:-10px;" class="stage">
 
 
           <div class="label" id="label1">Stage1</div>

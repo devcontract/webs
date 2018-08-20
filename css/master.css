@@ -25,22 +25,16 @@ body {
 
 }
 #arrLeft{
-  position: relative;
-  bottom: 138px;
-  left: 0px;
+
 
 }
 #arrLeftsloj2{
-  position: relative;
-  bottom: 138px;
-  left: -288px;
+
 
 }
 
 #arrow{
-  position: relative;
-  bottom: 138px;
-  left: -321px;
+
 
 }
 #arrow_Sloj2{
@@ -51,9 +45,7 @@ body {
 }
 
 #arrow2{
-  position: relative;
-  bottom: 263px;
-  left:224px;
+
 
 }
 #arrow2_Sloj2{
@@ -67,9 +59,7 @@ body {
 
 
 #arrRight{
-  position: relative;
-  bottom: 388px;
-  left: 749px;
+
 
 }
 #arrRightSloj2{
@@ -114,7 +104,7 @@ left:65px;
 }
 
 #label6{                     /* ARROW2 EXPECTAION2*/
-  position: relative;
+  position: absolute;
 top:-420px;
 left:340px;
 }

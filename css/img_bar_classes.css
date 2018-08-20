@@ -1,0 +1,24 @@
+.background_bar{
+visibility: visible;
+}
+
+.current_stage1_bar{
+  position: relative;
+  bottom: 138px;
+  left: 0px;
+}
+.current_stage2_bar{
+  position: relative;
+  bottom: 138px;
+  left: -321px;
+}
+.current_stage3_bar{
+  position: relative;
+  bottom: 138px;
+  left:-74px;
+}
+.current_finished_bar{
+  position: relative;
+  bottom: 388px;
+  left: 749px;
+}
