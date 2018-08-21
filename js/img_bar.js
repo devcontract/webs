@@ -1,4 +1,4 @@
-  $(document).ready(function(){
+$(document).ready(function(){
     var state = 0;
     setInterval(function(){
     if (state == 1) {
@@ -9,15 +9,13 @@
         changeState("arrLeftsloj2", "current_stage2_bar");
         changeState("arrow" , "current_stage3_bar");
           changeLabelState("label5", "Completed");
-          changeLabelState("label6", "Active");
-      }
+          changeLabelState("label6", "Active");}
     if (state == 3){
         changeState("arrow_Sloj2", "current_stage3_bar")
         changeState("arrow", "current_stage3_bar")
         changeState("arrow2" , "current_stage5_bar");
         changeLabelState("label6", "Completed");
-        changeLabelState("label7", "Active");
-      }
+        changeLabelState("label7", "Active");}
       if (state == 4){
         changeState("arrow2_Sloj2", "current_stage6_bar")
         changeState("arrow2", "current_stage6_bar")
@@ -31,19 +29,16 @@
   defaultAll()
         };
     state++;
-  },1000);
-
+  },5000);
 function changeState(arrow_name,class_name){
   arrow_name = "#" + arrow_name;
   $(arrow_name).removeClass("default_bar");
   $(arrow_name).addClass(class_name);
   };
-
 function changeLabelState(label_name, text){
   label_name = "#" + label_name;
   $(label_name).text(text);
 };
-
 function defaultAll(){
   changeState("arrLeft" , "default_bar");
   changeState("arrLeftsloj2", "default_bar");
