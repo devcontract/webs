@@ -1,47 +1,39 @@
-.background_bar{
-visibility: visible;
+.default_bar{
+  visibility: hidden;
 }
 
 .current_stage1_bar{
-  position: relative;
-  bottom: 138px;
-  left: 0px;
+  position: absolute;
+  bottom: 508px;
+  left: 210px;
 }
 .current_stage2_bar{
-  position: relative;
-  bottom: 138px;
-  left: -321px;
+  position: absolute;
+  bottom: 508px;
+  left: 210px;
 }
 .current_stage3_bar{
-  position: relative;
-  bottom: 138px;
-  left:-74px;
+  position: absolute;
+  bottom: 508px;
+  left: 464px;
 }
-.current_finished_bar{
-  position: relative;
-  bottom: 388px;
-  left: 749px;
+.current_stage4_bar{
+  position: absolute;
+  bottom: 508px;
+  left: 464px;
 }
-
-
-
-.current_stage1_bar_l2{
-  position: relative;
-  bottom: 138px;
-  left: -288px;
+.current_stage5_bar{
+  position: absolute;
+  bottom: 508px;
+  left: 710px;
 }
-.current_stage2_bar_l2{
-  position: relative;
-  bottom: 263px;
-  left: 255px;
+.current_stage6_bar{
+  position: absolute;
+  bottom: 508px;
+  left: 710px;
 }
-.current_stage3_bar_l2{
-  position: relative;
-  bottom: 263px;
-  left: 500px;
-}
-.current_finished_bar_l2{
-  position: relative;
-  bottom: 388px;
-  left: 502px;
+.finished_stage_bar{
+  position: absolute;
+  bottom: 508px;
+  left: 956px;
 }

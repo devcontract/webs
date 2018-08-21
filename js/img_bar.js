@@ -1,56 +1,25 @@
-$(document).ready(function(){
-
-$("#arrLeft").css({"visibility":"hidden"});
-$("#arrow").css({"visibility":"hidden"});
-$("#arrRight").css({"visibility":"hidden"});
-$("#arrLeftsloj2").css({"visibility":"hidden"});
-$("#arrow_Sloj2").css({"visibility":"hidden"});
-$("#arrRightSloj2").css({"visibility":"hidden"});
-
-    $("#b1").click(function(){
-        $("#arrLeft").addClass("current_stage1_bar");
-        $("#arrLeft").css({"visibility":"visible"});
-        $("#arrRight").css({"visibility":"hidden"});
+  $(document).ready(function(){
+      $("#b1").click(function(){
+        changeState("arrLeft" , "current_stage1_bar");
+      });
+      $("#b2").click(function(){
+        changeState("arrLeftsloj2", "current_stage2_bar")
+        changeState("arrow" , "current_stage3_bar");
+      });
+      $("#b3").click(function(){
+        changeState("arrow_Sloj2", "current_stage4_bar")
+        changeState("arrow" , "current_stage5_bar");
+      });
+      $("#b4").click(function(){
+        changeState("arrow2_Sloj2", "current_stage6_bar")
+        changeState("arrow2", "current_stage6_bar")
+        changeState("arrRight" , "finished_stage_bar");
+        changeState("arrRightSloj2", "finished_stage_bar");
       });
 
-      $("#b2").click(function(){
-      $("#arrow").removeClass("current_stage3_bar");
-        $("#arrow").addClass("current_stage2_bar");
-        $("#arrLeft").css({"visibility":"hidden"});
-        $("#arrow").css({"visibility":"visible"});});
-
-
-        $("#b3").click(function(){
-          $("#arrow").removeClass("current_stage2_bar");
-          $("#arrow").addClass("current_stage3_bar");});
-
-        $("#b4").click(function(){
-          $("#arrow").css({"visibility":"hidden"})
-          $("#arrRight").css({"visibility":"visible"});
-          $("#arrRight").addClass("current_finished_bar");});
-
-
-
-              $("#b5").click(function(){
-                  $("#arrLeftsloj2").addClass("current_stage1_bar_l2");
-                  $("#arrLeftsloj2").css({"visibility":"visible"});
-                  $("#arrRightSloj2").css({"visibility":"hidden"});
-                });
-
-                $("#b6").click(function(){
-                $("#arrow_Sloj2").removeClass("current_stage3_bar_l2");
-                  $("#arrow_Sloj2").addClass("current_stage2_bar_l2");
-                  $("#arrLeftsloj2").css({"visibility":"hidden"});
-                  $("#arrow_Sloj2").css({"visibility":"visible"});});
-
-
-                  $("#b7").click(function(){
-                    $("#arrow_Sloj2").removeClass("current_stage2_bar_l2");
-                    $("#arrow_Sloj2").addClass("current_stage3_bar_l2");});
-
-                  $("#b8").click(function(){
-                    $("#arrow_Sloj2").css({"visibility":"hidden"})
-                    $("#arrRightSloj2").css({"visibility":"visible"});
-                    $("#arrRightSloj2").addClass("current_finished_bar_l2");});
-
+function changeState(arrow_name,class_name){
+  arrow_name = "#" + arrow_name;
+$(arrow_name).removeClass("default_bar");
+  $(arrow_name).addClass(class_name);
+};
 });
