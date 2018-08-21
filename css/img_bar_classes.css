@@ -4,36 +4,36 @@
 
 .current_stage1_bar{
   position: absolute;
-  bottom: 508px;
+  bottom: 523px;
   left: 210px;
 }
 .current_stage2_bar{
   position: absolute;
-  bottom: 508px;
+  bottom: 523px;
   left: 210px;
 }
 .current_stage3_bar{
   position: absolute;
-  bottom: 508px;
+  bottom: 523px;
   left: 464px;
 }
 .current_stage4_bar{
   position: absolute;
-  bottom: 508px;
+  bottom: 523px;
   left: 464px;
 }
 .current_stage5_bar{
   position: absolute;
-  bottom: 508px;
+  bottom: 523px;
   left: 710px;
 }
 .current_stage6_bar{
   position: absolute;
-  bottom: 508px;
+  bottom: 523px;
   left: 710px;
 }
 .finished_stage_bar{
   position: absolute;
-  bottom: 508px;
+  bottom: 523px;
   left: 956px;
 }
