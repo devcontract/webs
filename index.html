@@ -24,20 +24,8 @@
 <link rel="stylesheet" href="./css/with_hist.css">
 <link rel="stylesheet" href="./css/chan_hist.css">
 
-<link rel="stylesheet" href="./css/img_bar_classes2.css">
-<link rel="stylesheet" href="./css/img_bar_classes3.css">
-<link rel="stylesheet" href="./css/img_bar_classes4.css">
 
-
-
-
-<script type="text/javascript" src="./js/tran_hist.js"></script>
-<script type="text/javascript" src="./js/pur_hist.js"></script>
-<script type="text/javascript" src="./js/ref_hist.js"></script>
-<script type="text/javascript" src="./js/with_hist.js"></script>
-<script type="text/javascript" src="./js/chan_hist.js"></script>
-<script type="text/javascript" src="./js/img_bar.js"></script>
-
+<script type="module" src="./js/index.js" defer></script>
 <body>
 
   <div style="min-height: 80px;max-height: 1px;padding-top: 10px;border-top-left-radius:18px; border-top-right-radius: 18px" class="block">
@@ -316,7 +304,7 @@
     <div class="button">
 
       <a class="non_allowed_button" style=" margin-right: 230px" id="buy_myetherwallet" type="button" href="https://www.myetherwallet.com/#send-transaction" target="_blank" name="myetherwallets">BUY WITH MYETHERWALLET</a>
-      <a class="non_allowed_button" style=" margin-right: 120px" id="buy_metamask" type="button" name="metamasks" onclick="bayMetamask()" href="">BUY WITH METAMASK</a>
+      <a class="non_allowed_button" style=" margin-right: 120px" id="buy_metamask" type="button" name="metamasks">BUY WITH METAMASK</a>
 
     </div>
   </div>
@@ -554,10 +542,9 @@ You can take back your investments</span>
     }
   </script>
 
-  <script type="text/javascript" src="./js/index.js" async></script>
 
-  <script type="text/javascript" src="./js/web3.min.js"></script>
-  <script type="text/javascript" src="./js/button_disable_enable.js">
+
+
   </script>
   <script type="text/javascript">
     // this function copy wallet address
