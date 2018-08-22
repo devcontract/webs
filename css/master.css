@@ -20,71 +20,9 @@ body {
     background-color: #7996A2;
 }
 
-#img_bar{
-  position: absolute;
-
-}
-
-
-.label {
-
-  position: absolute;
-  font-size: 20px;
-  bottom:115px;
-
-}
-
-#label1{                   /* ARROW1 RIGHT %40 BONUS */
-  position: absolute;
-top:-501px;
-left:20px;
-}
-
-#label2{                  /* ARROW2 25% BONUS */
-  position: absolute;
-top:-501px;
-left:280px;
-}
-
-#label3{                     /* ARROW3 bonus 10%*/
-  position: absolute;
-top:-501px;
-left:525px;
-}
 
 
 
-
-#label5{                     /* ARROW1 RIGHT EXPECTAION1*/
-  position: absolute;
-top:-420px;
-left:65px;
-}
-
-#label6{                     /* ARROW2 EXPECTAION2*/
-  position: absolute;
-top:-420px;
-left:340px;
-}
-
-#label7{                     /* ARROW3  EXPECTAION3*/
-  position: absolute;
-top:-420px;
-left:580px;
-}
-
-#label8{                     /* ARROW4  EXPECTAION4*/
-  position: absolute;
-top:-420px;
-left:828px;
-}
-#label9{                     /* ARROW4  SaleFinished*/
-  position: absolute;
-top:-471px;
-left:820px;
-width: 200px;
-visibility: hidden;
-}
 
 .green_line {
   border-bottom: 3px solid #00b399;

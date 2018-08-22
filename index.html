@@ -25,6 +25,9 @@
 <link rel="stylesheet" href="./css/chan_hist.css">
 
 <link rel="stylesheet" href="./css/img_bar_classes2.css">
+<link rel="stylesheet" href="./css/img_bar_classes3.css">
+<link rel="stylesheet" href="./css/img_bar_classes4.css">
+
 
 
 
@@ -61,12 +64,14 @@
     </div>
   </div>
 
-  <div style="min-height: 210px;max-height: 1px;padding-top: 1px;border-top-left-radius: 18px; border-top-right-radius: 18px" class="block">
+<button type="button" name="button"></button>
+
+  <div id="bar_state1" style="min-height: 210px;max-height: 1px;padding-top: 1px;border-top-left-radius: 18px; border-top-right-radius: 18px" class="block">
     <div class="img_bar">
       <img style="margin: 40px 0 0 9px;" id="back_ground" src="./img/bckgrnd_sprite.png" alt="">
       <div style="margin:12px 0 0 9px;" class="">
 
-        <img class=" current_stage1" style="" id="arrLeft" src="./img/arrows/arrLeft.png" alt="">
+        <img class="            current_stage1" style="" id="arrLeft" src="./img/arrows/arrLeft.png" alt="">
         <img class="default_bar current_stage2" style="" id="arrLeftsloj2" src="./img/arrows/arrLeftsloj2.png" alt="">
         <img class="default_bar current_stage3" style="" id="arrow" src="./img/arrows/arrow.png" alt="">
         <img class="default_bar current_stage4" style="" id="arrow_Sloj2" src="./img/arrows/arrowsloj2.png" alt="">
@@ -86,7 +91,7 @@
 
         </div>
         <div style="position:relative;top:-40px;" id="status">
-          <div class="label" id="label5">Expectation</div>
+          <div class="label" id="label5">Active</div>
           <div class="label" id="label6">Expectation</div>
           <div class="label" id="label7">Expectation</div>
           <div class="label" id="label8">Expectation</div>
@@ -98,42 +103,117 @@
     </div>
   </div>
 
-  <div style="min-height: 210px;max-height: 1px;padding-top: 1px;border-top-left-radius: 18px; border-top-right-radius: 18px" class="block">
+  <div id="bar_state2" style="min-height: 210px;max-height: 1px;padding-top: 1px;border-top-left-radius: 18px; border-top-right-radius: 18px" class="block">
     <div class="img_bar">
       <img style="margin: 40px 0 0 9px;" id="back_ground" src="./img/bckgrnd_sprite.png" alt="">
       <div style="margin:12px 0 0 9px;" class="">
 
-        <img class=" current_stage1_3" style="" id="arrLeft" src="./img/arrows/arrLeft.png" alt="">
-        <img class=" current_stage2_3" style="" id="arrLeftsloj2" src="./img/arrows/arrLeftsloj2.png" alt="">
-        <img class=" current_stage3_3" style="" id="arrow" src="./img/arrows/arrow.png" alt="">
-        <img class="default_bar_3 current_stage4_3" style="" id="arrow_Sloj2" src="./img/arrows/arrowsloj2.png" alt="">
-        <img class="default_bar_3 current_stage5_3" style="" id="arrow2" src="./img/arrows/arrow.png" alt="">
-        <img class="default_bar_3 current_stage6_3" style="" id="arrow2_Sloj2" src="./img/arrows/arrowsloj2.png" alt="">
-        <img class="default_bar_3 current_stage7_3" style="" id="arrRight" src="./img/arrows/arrRight.png" alt="">
-        <img class="default_bar_3 current_stage8_3" style="" id="arrRightSloj2" src="./img/arrows/arrRightSloj2.png" alt="">
+        <img class="            current_stage1" style="" id="arrLeft" src="./img/arrows/arrLeft.png" alt="">
+        <img class="            current_stage2" style="" id="arrLeftsloj2" src="./img/arrows/arrLeftsloj2.png" alt="">
+        <img class="            current_stage3" style="" id="arrow" src="./img/arrows/arrow.png" alt="">
+        <img class="default_bar current_stage4" style="" id="arrow_Sloj2" src="./img/arrows/arrowsloj2.png" alt="">
+        <img class="default_bar current_stage5" style="" id="arrow2" src="./img/arrows/arrow.png" alt="">
+        <img class="default_bar current_stage6" style="" id="arrow2_Sloj2" src="./img/arrows/arrowsloj2.png" alt="">
+        <img class="default_bar current_stage7" style="" id="arrRight" src="./img/arrows/arrRight.png" alt="">
+        <img class="default_bar current_stage8" style="" id="arrRightSloj2" src="./img/arrows/arrRightSloj2.png" alt="">
       </div>
       <div class="label">
 
         <div style="position:absolute;left:70px;top:-10px;" class="stage">
 
 
-          <div class="label_3" id="label1_3">Stage1</div>
-          <div class="label_3" id="label2_3">Stage2</div>
-          <div class="label_3" id="label3_3">Stage3</div>
+          <div class="label" id="label1">Stage1</div>
+          <div class="label" id="label2">Stage2</div>
+          <div class="label" id="label3">Stage3</div>
 
         </div>
         <div style="position:relative;top:-40px;" id="status">
-          <div class="label_3" id="label5_3">Expectation</div>
-          <div class="label_3" id="label6_3">Expectation</div>
-          <div class="label_3" id="label7_3">Expectation</div>
-          <div class="label_3" id="label8_3">Expectation</div>
+          <div class="label" id="label5">Completed</div>
+          <div class="label" id="label6">Active</div>
+          <div class="label" id="label7">Expectation</div>
+          <div class="label" id="label8">Expectation</div>
 
-          <div class="label_3" id="label9_3">Sale Finished</div>
+          <div class="label" id="label9">Sale Finished</div>
         </div>
 
       </div>
     </div>
   </div>
+
+  <div id="bar_state3" style="min-height: 210px;max-height: 1px;padding-top: 1px;border-top-left-radius: 18px; border-top-right-radius: 18px" class="block">
+    <div class="img_bar">
+      <img style="margin: 40px 0 0 9px;" id="back_ground" src="./img/bckgrnd_sprite.png" alt="">
+      <div style="margin:12px 0 0 9px;" class="">
+
+        <img class="            current_stage1" style="" id="arrLeft" src="./img/arrows/arrLeft.png" alt="">
+        <img class="            current_stage2" style="" id="arrLeftsloj2" src="./img/arrows/arrLeftsloj2.png" alt="">
+        <img class="            current_stage3" style="" id="arrow" src="./img/arrows/arrow.png" alt="">
+        <img class="            current_stage4" style="" id="arrow_Sloj2" src="./img/arrows/arrowsloj2.png" alt="">
+        <img class="            current_stage5" style="" id="arrow2" src="./img/arrows/arrow.png" alt="">
+        <img class="default_bar current_stage6" style="" id="arrow2_Sloj2" src="./img/arrows/arrowsloj2.png" alt="">
+        <img class="default_bar current_stage7" style="" id="arrRight" src="./img/arrows/arrRight.png" alt="">
+        <img class="default_bar current_stage8" style="" id="arrRightSloj2" src="./img/arrows/arrRightSloj2.png" alt="">
+      </div>
+      <div class="label">
+
+        <div style="position:absolute;left:70px;top:-10px;" class="stage">
+
+
+          <div class="label" id="label1">Stage1</div>
+          <div class="label" id="label2">Stage2</div>
+          <div class="label" id="label3">Stage3</div>
+
+        </div>
+        <div style="position:relative;top:-40px;" id="status">
+          <div class="label" id="label5">Completed</div>
+          <div class="label" id="label6">Completed</div>
+          <div class="label" id="label7">Active</div>
+          <div class="label" id="label8">Expectation</div>
+
+          <div class="label" id="label9">Sale Finished</div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div id="bar_state4" style="min-height: 210px;max-height: 1px;padding-top: 1px;border-top-left-radius: 18px; border-top-right-radius: 18px" class="block">
+    <div class="img_bar">
+      <img style="margin: 40px 0 0 9px;" id="back_ground" src="./img/bckgrnd_sprite.png" alt="">
+      <div style="margin:12px 0 0 9px;" class="">
+
+        <img class="            current_stage1" style="" id="arrLeft" src="./img/arrows/arrLeft.png" alt="">
+        <img class="            current_stage2" style="" id="arrLeftsloj2" src="./img/arrows/arrLeftsloj2.png" alt="">
+        <img class="            current_stage3" style="" id="arrow" src="./img/arrows/arrow.png" alt="">
+        <img class="            current_stage4" style="" id="arrow_Sloj2" src="./img/arrows/arrowsloj2.png" alt="">
+        <img class="            current_stage5" style="" id="arrow2" src="./img/arrows/arrow.png" alt="">
+        <img class="            current_stage6" style="" id="arrow2_Sloj2" src="./img/arrows/arrowsloj2.png" alt="">
+        <img class="            current_stage7" style="" id="arrRight" src="./img/arrows/arrRight.png" alt="">
+        <img class="default_bar current_stage8" style="" id="arrRightSloj2" src="./img/arrows/arrRightSloj2.png" alt="">
+      </div>
+      <div class="label">
+
+        <div style="position:absolute;left:70px;top:-10px;" class="stage">
+
+
+          <div class="label" id="label1">Stage1</div>
+          <div class="label" id="label2">Stage2</div>
+          <div class="label" id="label3">Stage3</div>
+
+        </div>
+        <div style="position:relative;top:-40px;" id="status">
+          <div class="label" id="label5">Completed</div>
+          <div class="label" id="label6">Completed</div>
+          <div class="label" id="label7">Completed</div>
+          <div class="label" id="label8">Active</div>
+
+          <div style="visibility:visible"class="label" id="label9">Sale Finished</div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
 
   <div style="min-height: 180px;max-height: 10px;padding-top: 10px;border-top-left-radius: 18px; border-top-right-radius: 18px" class="block">
     <div class="border"></div>

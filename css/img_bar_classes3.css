@@ -1,0 +1,111 @@
+.default_bar_4{
+  visibility: hidden;
+}
+
+.current_stage1_4{
+  position: absolute;
+  bottom: 91px;
+  left: 210px;
+}
+.current_stage2_4{
+  position: absolute;
+  bottom: 91px;
+  left: 210px;
+}
+.current_stage3_4{
+  position: absolute;
+  bottom: 91px;
+  left: 464px;
+}
+.current_stage4_4{
+  position: absolute;
+  bottom: 91px;
+  left: 464px;
+}
+.current_stage5_4{
+  position: absolute;
+  bottom: 91px;
+  left: 710px;
+}
+.current_stage6_4{
+  position: absolute;
+  bottom: 91px;
+  left: 710px;
+}
+.current_stage7_4{
+  position: absolute;
+  bottom: 91px;
+  left: 956px;
+}
+.current_stage8_4{
+  position: absolute;
+  bottom: 91px;
+  left: 956px;
+}
+
+.label_4 {
+
+  position: absolute;
+  font-size: 20px;
+  bottom:115px;
+
+}
+
+#label1_4{                   /* ARROW1 RIGHT %40 BONUS */
+  position: absolute;
+top:-69px;
+left:20px;
+}
+
+#label2_4{                  /* ARROW2 25% BONUS */
+  position: absolute;
+top:-69px;
+left:280px;
+}
+
+#label3_4{                     /* ARROW3 bonus 10%*/
+  position: absolute;
+top:-69px;
+left:525px;
+}
+
+
+
+
+#label5_4{                     /* ARROW1 RIGHT EXPECTAION1*/
+  position: absolute;
+top:12px;
+left:65px;
+}
+
+#label6_4{                     /* ARROW2 EXPECTAION2*/
+  position: absolute;
+top:12px;
+left:340px;
+}
+
+#label7_4{                     /* ARROW3  EXPECTAION3*/
+  position: absolute;
+top:12px;
+left:580px;
+}
+
+#label8_4{                     /* ARROW4  EXPECTAION4*/
+  position: absolute;
+top:12px;
+left:828px;
+}
+#label9_4{                     /* ARROW4  SaleFinished*/
+  position: absolute;
+top:-43px;
+left:820px;
+width: 200px;
+visibility: hidden;
+}
+
+
+.bar_state1_4{}
+.bar_state2_4{}
+.bar_state3_4{}
+.bar_state4_4{}
+.bar_state5_4{}
