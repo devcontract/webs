@@ -1,7 +1,9 @@
 .default_bar{
   visibility: hidden;
 }
-
+.hide{
+  display: none;
+}
 
 #img_bar{
   position: absolute;
