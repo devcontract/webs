@@ -26,12 +26,10 @@ setInterval (function() {
 
 function allowed_button(id,jqid){
    document.getElementById(id).className = "allowed_button";
-   document.getElementById(id).setAttribute('onclick' ,'return true');
-   $(jqid).css("pointer-events", "auto");
+    $(jqid).css("pointer-events", "auto");
 }
 
 function non_allowed_button(id, jqid){
    document.getElementById(id).className = "non_allowed_button";
-   document.getElementById(id).setAttribute('onclick' , "return false");
-   $(jqid).css("pointer-events", "none");
+    $(jqid).css("pointer-events", "none");
 }
