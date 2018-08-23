@@ -1,5 +1,4 @@
 export function buyToken(){console.log("buying!!!!!")};
-
 export function state() {
 var trig;
 setInterval (function() {
@@ -20,16 +19,13 @@ setInterval (function() {
      non_allowed_button("refund_metamask");
      trig=1;
    }
-
 },1000);
 }
 
 function allowed_button(id,jqid){
    document.getElementById(id).className = "allowed_button";
-    $(jqid).css("pointer-events", "auto");
-}
+  }
 
 function non_allowed_button(id, jqid){
    document.getElementById(id).className = "non_allowed_button";
-    $(jqid).css("pointer-events", "none");
-}
+    }
