@@ -16,7 +16,8 @@
   text-align: center;
   margin-top: 40px;
   width: 270px;
-  background-color: #00BEA3;  
+  background-color: #00BEA3;
+
 }
 
 .non_allowed_button{
@@ -29,7 +30,6 @@
   margin-top: 50px;
   display: inline-block;
   font-size: 13px;
-  cursor: not-allowed;
   padding-top: 15px;
   text-decoration: none;
   border: 1px solid white;
@@ -39,4 +39,5 @@
   width: 270px;
   background-color:#cccccc;
   color: #737277;
+  cursor: not-allowed;
 }
