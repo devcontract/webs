@@ -9,8 +9,7 @@
 </head>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
-<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -21,6 +20,7 @@
 <link rel="stylesheet" href="./css/pur_tok.css">
 <link rel="stylesheet" href="./css/tok_withdrawal.css">
 <link rel="stylesheet" href="./css/modal.css">
+<link rel="stylesheet" href="./css/modal_payment_button.css">
 <link rel="stylesheet" href="./css/pop_up_window.css">
 <link rel="stylesheet" href="./css/button.css">
 <link rel="stylesheet" href="./css/tran_hist.css">
@@ -54,7 +54,7 @@
     </div>
 
     <div style="margin-top:10px" class="softhard">
-      <span>Soft: <span id="soft"></span> ETH </span> (<span id="eth_convert_soft"></span> <span class=""> <span class="currency"></span>)
+      <span>Soft: <span id="soft"></span> ETH </span> <span id="eth_convert_soft"></span> <span class=""> <span class="currency"></span>
       <span class="hard">Hard: <span id="hard"></span> ETH (<span id="eth_convert_hard"></span> <span class="currency"></span>)
 
     </div>
@@ -266,8 +266,6 @@
         <img style="filter:invert(100%);margin-top:-150px;margin-left:92px" src="./img/present.png" alt="present">
         <span id="bonus" style="margin-left:10px;"></span><span style="margin-left:5px" id="value_token"></span><span style="margin: 5px;" id="token_name4"></span>
 
-
-
       </div>
     </div>
 
@@ -322,7 +320,7 @@
 
 
     <div class="button">
-
+      <button  id="myBtn_payment_button" class="" style="margin-right:130px"></button>
       <a class="non_allowed_button" style=" margin-right: 230px" id="buy_myetherwallet" type="button" href="https://www.myetherwallet.com/#send-transaction" target="_blank" name="myetherwallets">BUY WITH MYETHERWALLET</a>
       <a class="non_allowed_button" style=" margin-right: 120px" id="buy_metamask" type="button" href="" name="metamasks">BUY WITH METAMASK</a>
 
@@ -553,7 +551,11 @@ You can take back your investments</span>
   </div>
 
 
+
+
   <script type="text/javascript" src="./js/modal.js"></script>
+
+
   <script type="text/javascript">
     // Popup window code
     function newPopup(url) {
