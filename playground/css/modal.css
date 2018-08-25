@@ -1,4 +1,4 @@
-.modal {
+.paymment_modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -13,7 +13,7 @@
 }
 
 /* Modal Content */
-.modal-content {
+.payment-modal-content {
     background-color: #fefefe;
     margin: auto;
     padding: 20px;
@@ -23,15 +23,15 @@
 }
 
 /* The Close Button */
-.close {
+.paymant-modal-close {
     color: #aaaaaa;
     float: right;
     font-size: 20px;
     font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
+.paymant-modal-close:hover,
+.paymant-modal-close:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
@@ -44,4 +44,7 @@ background-color: #ee9a43;
 border-radius: 5px;
 color: white;
 font-size: 13px;
+}
+textarea{
+  resize: vertical;
 }

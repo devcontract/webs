@@ -1,24 +1,18 @@
-var modal = document.getElementById('myModal');
-
-// Get the button that opens the modal
-var payment_btn = document.getElementById("payment_btn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
+var modal = document.getElementById('paymment_modal');
 // When the user clicks the button, open the modal
-payment_btn.onclick = function() {
-    modal.style.display = "block";
-}
+$("#payment_btn").click(function(){
+  $("#payment_modal").css("display", "block");
+});
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
-}
+$(".paymant-modal-close").click(function(){
+    $("#payment_modal").css("display", "none");
+});
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
     if (event.target == modal) {
-        modal.style.display = "none";
+        $("#payment_modal").css("display", "none");
+
     }
-}
+};
