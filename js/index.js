@@ -6,7 +6,8 @@ import {getEthPrice} from './parsingJson_module.js'
 //import {getEurToUsd} from './parsingJson_module.js'
 $(document).ready(function(){
 state();
-document.getElementById('buy_metamask').addEventListener('click', function(){buyToken()});
+$("#buy_metamask").click(function(){buyToken()});
+
 timerId();
 
 
