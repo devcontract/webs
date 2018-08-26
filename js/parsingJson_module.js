@@ -12,8 +12,14 @@ export function getEthPrice() {
             $(".currency").text(currency);
         }
         $("#eth_convert_raised").text($("#raised").text() * jd.ETH[currency]);
-        $("#eth_convert_soft").text($("#soft").text() * jd.ETH[currency]);
-        $("#eth_convert_hard").text($("#hard").text() * jd.ETH[currency]);
+
+        var fixedSoft = $("#soft").text() * jd.ETH[currency];
+        var fs = fixedSoft.toFixed(2);
+        $("#eth_convert_soft").text(fs);
+
+        var fixedHard = $("#hard").text() * jd.ETH[currency];
+        var fh = fixedHard.toFixed(2);
+        $("#eth_convert_hard").text(fh);
       }); // Displaying Jason object that we want
   }, 100);
 }; // Interval in MiliSeconds
