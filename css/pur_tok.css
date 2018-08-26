@@ -170,6 +170,23 @@ transition: 0.6s ease-in-out;
 .button {
 display: flex;
 }
+.green_line {
+  border-bottom: 3px solid #00b399;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 20px;
+  font-size: 23px;
+  font-family: sans-serif;
+}
+
+.bottom_part span {
+  color: white;
+  font-size: 60px;
+  font-family: sans-serif;
+}
+.bottom_part {
+  margin-top: 20px;
+}
 
 
 
