@@ -21,7 +21,7 @@ export function showFiatPrice() {
           formatFiat("#hard", "#eth_convert_hard", 2);
         }
       }); // Displaying Jason object that we want
-  }, 1000);
+  }, 100);
 }; // Interval in MiliSeconds
 
 function formatFiat(from, to, dec) {

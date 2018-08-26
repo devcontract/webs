@@ -1,20 +1,17 @@
 
-import {state} from './button_disable_enable.js';
-import {buyToken} from './button_disable_enable.js'
+
 import {timerId} from './progresbar_module.js'
-import {getEthPrice} from './parsingJson_module.js'
-//import {getEurToUsd} from './parsingJson_module.js'
+import {showFiatPrice} from './fiatPrice_module.js'
+import {showTransaction} from './transaction_module.js'
+
 $(document).ready(function(){
-state();
-$("#buy_metamask").click(function(){buyToken()});
 
+//$("#buy_metamask").click(function(){buyToken()});
+showFiatPrice();
 timerId();
+showTransaction();
 
 
-
-getEthPrice()
-//getEurToUsd()
-//$("#ethusd").text( $("#raised").text() * ethusd );
 
 var token_name = "TAS";
 document.getElementById('token_name1').innerHTML = "TAS";
