@@ -9,14 +9,14 @@ $(document).ready(function(){
 //$("#buy_metamask").click(function(){buyToken()});
 showFiatPrice();
 timerId();
-showTransaction();
+//showTransaction();
 
 
 
 
 
 var token_name = "TAS";
-document.getElementById('token_price').innerHTML = "123324343431";
+document.getElementById('token_price').innerHTML = "0";
 document.getElementById('token_name1').innerHTML = "TAS";
 document.getElementById('token_name2').innerHTML = "TAS";
 document.getElementById('token_name3').innerHTML = "TAS";
@@ -25,7 +25,7 @@ document.getElementById('raised').innerHTML = "1";
 document.getElementById('soft').innerHTML = "9876";
 document.getElementById('hard').innerHTML = "44444";
 document.getElementById('tokensold').innerHTML = "43433434";
-document.getElementById('value_token').innerHTML = "26";
+document.getElementById('value_token').innerHTML = "0";
 document.getElementById('paymentaddr').value = "0x66a945a11483e05bedb37474ca29ad6e8656c4f4";
 document.getElementById('gLimitBay').innerHTML = "2200";
 document.getElementById('gprice').innerHTML = "4000";
