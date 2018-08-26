@@ -9,7 +9,7 @@ $(document).ready(function(){
 //$("#buy_metamask").click(function(){buyToken()});
 showFiatPrice();
 timerId();
-//showTransaction();
+showTransaction();
 setInterval(function(){
 if (find_occurences( $("#input_value").val() , ".") >=2 || $("#input_value").val() == "." ) {$("#input_value").val("");};
 },10);

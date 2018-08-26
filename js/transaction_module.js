@@ -55,7 +55,8 @@ function createButtonTrans(txHref, data, color, elemWidth) {
   a.style.border = 'none';
   a.style.textDecoration = "none";
   a.style.color = "white";
-  a.style.height = "30px";
+  a.style.height = "20px";
+  a.style.verticalAlign = "middle";
   a.style.paddingTop = "4px";
   a.style.marginLeft = "20px";
   a.style.textShadow = '2px 2px black';

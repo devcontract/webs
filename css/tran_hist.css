@@ -37,6 +37,7 @@ font-family: monospace;
 }
 .tran_hist_grid2 {
 padding-top: 10px;
+vertical-align: middle;
 margin-left: 5px;
 display:inline-grid ;
 width: 10px;
