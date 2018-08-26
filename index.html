@@ -284,7 +284,7 @@
 
 
         </div>
-        <input id="input_value" style="text-align:right" type="text" maxlength="21" value="1" oninput="this.value = this.value.replace(/[^a-z]/, '')"/>
+        <input id="input_value" style="text-align:right" type="text" maxlength="21" value="1" oninput="this.value = this.value.replace(/[^0-9-.]/, '')" onDrop="return false" autocomplete=off onpaste="return false" />
 
         <span class="span_string">=</span>
         <span class="span_string" id="token_calc"> </span>
