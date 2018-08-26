@@ -15,7 +15,7 @@ showTransaction();
 
 
 var token_name = "TAS";
-document.getElementById('token_price').innerHTML = "123321";
+document.getElementById('token_price').innerHTML = "123324343431";
 document.getElementById('token_name1').innerHTML = "TAS";
 document.getElementById('token_name2').innerHTML = "TAS";
 document.getElementById('token_name3').innerHTML = "TAS";
