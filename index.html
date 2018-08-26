@@ -8,11 +8,6 @@
   <title></title>
 </head>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
 <link rel="stylesheet" href="./css/img_bar_classes.css">
 <link rel="stylesheet" href="./css/master.css">
 <link rel="stylesheet" href="./css/firstBlock.css">
@@ -30,7 +25,7 @@
 <link rel="stylesheet" href="./css/chan_hist.css">
 
 
-<script type="module" src="./js/index.js" defer></script>
+
 
 <body>
 
@@ -39,7 +34,7 @@
     <div style="display:flex; margin:0 auto; width:1000px;margin-bottom: 10px;" class="">
 
       <div style="width:400px;margin-left: 65px;text-align:left;">
-        <span>Raised: <span id="raised"></span> ETH <span> (<span id="eth_convert_raised"></span> <span class="currency"></span>) </span>
+        <span>Raised: <span id="raised"></span> ETH <span> <span id="eth_convert_raised"></span>  </span>
         </span>
 
       </div>
@@ -55,8 +50,8 @@
     </div>
 
     <div style="margin-top:10px" class="softhard">
-      <span>Soft: <span id="soft"></span> ETH </span> <span id="eth_convert_soft"></span> <span class=""> <span class="currency"></span>
-      <span class="hard">Hard: <span id="hard"></span> ETH (<span id="eth_convert_hard"></span> <span class="currency"></span>)
+      <span>Soft: <span id="soft"></span> ETH </span> <span id="eth_convert_soft"></span> <span class="">
+      <span class="hard">Hard: <span id="hard"></span> ETH <span id="eth_convert_hard"></span>
 
     </div>
     <div style="position:relative;width:30px;left:10px;top:-70px;" class="">
@@ -323,7 +318,7 @@
     <div class="button">
       <button id="myBtn_payment_button" class="" style="margin-right:130px"></button>
       <a class="non_allowed_button" style=" margin-right: 230px" id="buy_myetherwallet" type="button" href="https://www.myetherwallet.com/#send-transaction" target="_blank" name="myetherwallets">BUY WITH MYETHERWALLET</a>
-      <a class="non_allowed_button" style=" margin-right: 120px" id="buy_metamask" type="button"  name="metamasks">BUY WITH METAMASK</a>
+      <a class="non_allowed_button" style=" margin-right: 120px" id="buy_metamask" type="button" name="metamasks">BUY WITH METAMASK</a>
 
     </div>
   </div>
@@ -554,8 +549,12 @@ You can take back your investments</span>
 
 
 
-  <script type="text/javascript" src="./js/modal.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/web3.min.js"></script>
 
+  <!--<script type="text/javascript" src="./js/modal_payment_button"></script>-->
+  <script type="module" src="./js/index.js" defer></script>
 
   <script type="text/javascript">
     // Popup window code
