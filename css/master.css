@@ -5,6 +5,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: white;
+
 }
 .block {
   border: 1px solid none;
@@ -18,4 +19,7 @@ body {
   max-width: 1010px;
   min-width: 1010px;
     background-color: #7996A2;
+}
+a{
+text-decoration: none !important;
 }
