@@ -3,14 +3,16 @@
 import {timerId} from './progresbar_module.js'
 import {showFiatPrice} from './fiatPrice_module.js'
 import {showTransaction} from './transaction_module.js'
-//import {find_occurences} from './calcInputRestriction_module.js'
+import {find_occurences} from './calcInputRestriction_module.js'
 $(document).ready(function(){
 
 //$("#buy_metamask").click(function(){buyToken()});
 showFiatPrice();
 timerId();
 //showTransaction();
-
+setInterval(function(){
+if (find_occurences( $("#input_value").val() , ".") >=2 || $("#input_value").val() == "." ) {$("#input_value").val("");};
+},10);
 
 
 
