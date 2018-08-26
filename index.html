@@ -58,8 +58,8 @@
 
 
 
-      <span>usd</span> <input id="usd" type="radio" name="currency" value="usd" checked>
-      <input id="eur" type="radio" name="currency" value="eur"> <span>eur</span>
+      <span>USD</span> <input id="usd" type="radio" name="currency" value="usd" checked>
+      <input id="eur" type="radio" name="currency" value="eur"> <span>EUR</span>
 
 
 
@@ -279,7 +279,10 @@
 
       <div id="digit_display">
         <div class="">
-          <a>SUM ETH  <i id="minVal" style="font-size:18px; color:#00BEA3" class="fa" title="minimum amount : 0.005 ETH">&#xf05a;</i></a> <br>
+
+          <a>SUM ETH  <i id="minVal" style="font-size:18px; color:#00BEA3" class="fa" title="minimum amount:">&#xf05a;</i></a> <br>
+
+
         </div>
         <input id="input_value" style="text-align:right" type="text" maxlength="21" value="1" oninput="this.value = this.value.replace(/[^a-z]/, '')"/>
 
@@ -359,10 +362,8 @@
     </div>
     <div class="button">
       <a class="non_allowed_button" style=" margin-right: 230px" id="withdraw_myetherwallet" type="button" href="https://www.myetherwallet.com/#send-transaction" target="_blank" name="myetherwallet">WITHDRAWAL WITH MYETHERWALLET</a>
-      <a class="non_allowed_button" style=" margin-right: 120px" id="withdraw_metamask" type="button" name="metamask" onclick="withdrawToken()" href="">WITHDRAWAL WITH METAMASK</a>
-      <!-- if needed please change above buttons id-->
-      <!--<a href="./pur_tok.html" name="button" id="myetherwallet2">MYETHERWALLET</a>
-      <a href="./pur_tok.html" name="button" id="metamask2">METAMASK</a>-->
+      <a class="non_allowed_button" style=" margin-right: 120px" id="withdraw_metamask" type="button" name="metamask" >WITHDRAWAL WITH METAMASK</a>
+
     </div>
   </div>
 
@@ -373,7 +374,7 @@ You can take back your investments</span>
     </div>
 
     <div class="tokenvalue">
-      <h2 class="t"><span style="padding-right:5px;" id="refund"></span>ETH</h2>
+      <h2 class="t"><span style="padding-right:5px;" id="refund"></span></h2>
     </div>
 
     <div class="warning">
@@ -398,10 +399,8 @@ You can take back your investments</span>
 
     <div class="button">
       <a class="non_allowed_button" style=" margin-right: 230px" id="refund_myetherwallet" type="button" href="https://www.myetherwallet.com/#send-transaction" target="_blank" name="myetherwallet">REFUND WITH MYETHERWALLET</a>
-      <a class="non_allowed_button" style=" margin-right: 120px" id="refund_metamask" type="button" name="metamask" onclick="refundEther()" href="">REFUND WITH METAMASK</a>
+      <a class="non_allowed_button" style=" margin-right: 120px" id="refund_metamask" type="button" name="metamask" >REFUND WITH METAMASK</a>
 
-      <!--  <a href="./pur_tok.html" name="button" id="myetherwallet">MYETHERWALLET</a>
-        <a href="./pur_tok.html" name="button" id="metamask">METAMASK</a>-->
     </div>
 
 
