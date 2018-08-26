@@ -291,7 +291,7 @@
         <div class="">
           <a>SUM ETH  <i id="minVal" style="font-size:18px; color:#00BEA3" class="fa" title="minimum amount:">&#xf05a;</i></a> <br>
         </div>
-        <input id="input_value" style="text-align:right" type="text" maxlength="21" value="1" oninput="this.value = this.value.replace(/[^0-9-.]/, '')" onDrop="return false" autocomplete=off onpaste="return false" />
+        <input id="input_value" style="text-align:right" type="text" maxlength="21" value="1" oninput="this.value = this.value.replace(/[^0-9-.]/, '')" onDrop="return false" autocomplete=off onpaste="return false" placeholder="Enter amount" />
 
         <span class="span_string">=</span>
         <span class="span_string" id="token_calc"> </span>
@@ -581,8 +581,6 @@ You can take back your investments</span>
       document.execCommand("copy");
     }
   </script>
-
-  <script src="./js/calcInputRestriction_module.js">
 
   </script>
 </body>
