@@ -1,4 +1,4 @@
-export function buyToken(){console.log("buying!!!!!")};
+
 export function state() {
 var trig;
 setInterval (function() {
