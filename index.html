@@ -419,6 +419,8 @@ You can take back your investments</span>
     <button id="mkarec3" type="button" name="button" onclick="logRefHist()">make a Refund record</button>
     <button id="mkarec4" type="button" name="button" onclick="logwithHist()">make a Withdraw record</button>
     <button id="mkarec5" type="button" name="button" onclick="logChanHist()">make a Change record</button>
+    <button id="mkarec6" type="button" name="button" onclick="">test erase record</button>
+
   </div>
 
   <!--Transaction history Log BLock-->
@@ -581,8 +583,16 @@ You can take back your investments</span>
       document.execCommand("copy");
     }
   </script>
+<script type="text/javascript">
 
-  </script>
+$("#mkarec6").click(function(){
+  $("#tran_hist_stringbase").children().remove();
+
+
+});
+
+</script>
+
 </body>
 
 </html>
