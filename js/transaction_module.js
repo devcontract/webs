@@ -10,7 +10,9 @@ export function showTransaction(app) {
     for (length = length-1; length > 1; length--) {
       if (data.result[length].to == multWallet.toLowerCase()) {
         i++;
+    //  $("#tran_hist_stringbase").remove();
         renderTransaction(data.result[length], i);
+
       }
     }
 
@@ -22,8 +24,8 @@ export function showTransaction(app) {
 
 function renderTransaction(element, index) {
 
-  var date = new Date(element.timeStamp * 1000);
-  date = date.toLocaleString();
+  var date = Math.random() //new Date(element.timeStamp * 1000); // chenaged the date generation to Math.random() to hav an example . now we are displayin only very last string
+//  date = date.toLocaleString();
 
   txHref = node + "/tx/" + element.hash;
   createBaseTrans();
